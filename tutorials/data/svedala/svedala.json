@@ -1,0 +1,1768 @@
+{
+  "_module": "pandapower.auxiliary",
+  "_class": "pandapowerNet",
+  "_object": {
+    "bus": {
+      "_module": "pandas.core.frame",
+      "_class": "DataFrame",
+      "_object": "{\"columns\":[\"name\",\"vn_kv\",\"type\",\"zone\",\"in_service\"],\"index\":[11,12,13,14,21,31,41,42,51,61,62,63,71,72,81,82,83,91,101,102,111,121,131,135,136,137,138,141,142,144,145,151,152,161,171,181,191,201,202,203,208,211,221,231,241,242,251,261,271,274,281,283,284,291,292,301,311,312,321,323,331,335,336,337,341,351,361,371,381,382,383,391,393,401,402,409,411,412,421,422,427,428,429,431,432,433,441,442,443,444,451,461,471,481,491,501,511,515,521,522,531,532,541,542,545,551,561,50050],\"data\":[[\"GGAN135-0\",135.0,\"b\",9999,true],[\"GGAN 17-0\",17.0,\"b\",9999,true],[\"GGAN400-0\",400.0,\"b\",9999,true],[\"GGAN 17-0\",17.0,\"b\",9999,true],[\"NNORLUNDA\",11.0,\"b\",9999,true],[\"SAG\\u00c5RD ST1\",11.0,\"b\",9999,true],[\"TOMS400-0\",400.0,\"b\",9999,true],[\"TOMS 20-0\",20.0,\"b\",9999,false],[\"ITTERBERG\",11.0,\"b\",9999,true],[\"LOCK400-0\",400.0,\"b\",9999,true],[\"LOCK 20-0\",20.0,\"b\",9999,true],[\"LOCK 20-0\",20.0,\"b\",9999,true],[\"ALBO400-0\",400.0,\"b\",9999,true],[\"ALBO 17-0\",17.0,\"b\",9999,true],[\"RIKS400-0\",400.0,\"b\",9999,true],[\"RIKS 20-0\",20.0,\"b\",9999,true],[\"RIKS 20-0\",20.0,\"b\",9999,true],[\"ISKB\\u00c4CKEN\",11.0,\"b\",9999,true],[\"AMMA 50-0\",50.0,\"b\",9999,true],[\"AMMA 10-0\",10.0,\"b\",9999,true],[\"EDHABERG S\",11.0,\"b\",9999,true],[\"EMMARYD ST\",11.0,\"b\",9999,true],[\"\\u00c4LL400-0\",400.0,\"b\",9999,true],[\"\\u00c4LL 17-0\",17.0,\"b\",9999,true],[\"\\u00c4LL 17-0\",17.0,\"b\",9999,true],[\"\\u00c4LL 17-0\",17.0,\"b\",9999,true],[\"\\u00c4LL 17-0\",17.0,\"b\",9999,true],[\"\\u00c4ST 11-0\",11.0,\"b\",9999,true],[\"\\u00c4ST135-0\",135.0,\"b\",9999,true],[\"\\u00c4ST 20-0\",20.0,\"b\",9999,true],[\"\\u00c4ST 20-0\",20.0,\"b\",9999,false],[\"AURA400-0\",400.0,\"b\",9999,true],[\"AURA 17-0\",17.0,\"b\",9999,true],[\"ABELSTAD S\",11.0,\"b\",9999,true],[\"ALLBO ST1\",11.0,\"b\",9999,true],[\"UBBEN ST1\",11.0,\"b\",9999,true],[\"V\\u00c4LLSG\\u00c5VA\",11.0,\"b\",9999,true],[\"\\u00c4RN400-0\",400.0,\"b\",9999,true],[\"\\u00c4RN 20-0\",20.0,\"b\",9999,true],[\"\\u00c4RN 20-0\",20.0,\"b\",9999,true],[\"\\u00c4RN 20-0\",20.0,\"b\",9999,true],[\"ILLBERGET\",11.0,\"b\",9999,true],[\"INLUNDA ST\",11.0,\"b\",9999,true],[\"\\u00c5NG\\u00c5KER ST\",11.0,\"b\",9999,true],[\"ELLB 11-0\",11.0,\"b\",9999,true],[\"ELLB 50-0\",50.0,\"b\",9999,true],[\"ITTL400-0\",400.0,\"b\",9999,true],[\"\\u00c5NSVIK ST3\",11.0,\"b\",9999,true],[\"JAGG400-0\",400.0,\"b\",9999,true],[\"JAGG 17-0\",17.0,\"b\",9999,true],[\"ORRS220-0\",220.0,\"b\",9999,true],[\"ORRS 17-0\",17.0,\"b\",9999,true],[\"ORRS 17-0\",17.0,\"b\",9999,true],[\"ORR?400-0\",400.0,\"b\",9999,true],[\"ORR?135-0\",135.0,\"b\",9999,true],[\"YLADA ST1\",11.0,\"b\",9999,true],[\"YSTA 50-0\",50.0,\"b\",9999,true],[\"YSTA135-0\",135.0,\"b\",9999,true],[\"LM\\u00c5135-0\",135.0,\"b\",9999,true],[\"LM\\u00c5 17-0\",17.0,\"b\",9999,true],[\"UTHU400-0\",400.0,\"b\",9999,true],[\"UTHU 20-0\",20.0,\"b\",9999,true],[\"UTHU 20-0\",20.0,\"b\",9999,true],[\"UTHU 20-0\",20.0,\"b\",9999,false],[\"AMMALUNDA\",11.0,\"b\",9999,true],[\"EGELSTAD S\",11.0,\"b\",9999,true],[\"OLSTAD ST1\",11.0,\"b\",9999,true],[\"TACKMYRA S\",11.0,\"b\",9999,true],[\"TENF220-0\",220.0,\"b\",9999,true],[\"TENF 17-0\",17.0,\"b\",9999,true],[\"TENF400-0\",400.0,\"b\",9999,true],[\"TORF135-0\",135.0,\"b\",9999,true],[\"TORF 17-0\",17.0,\"b\",9999,true],[\"TORT135-0\",135.0,\"b\",9999,true],[\"TORT400-0\",400.0,\"b\",9999,true],[\"TORT 17-0\",17.0,\"b\",9999,true],[\"TOR? 50-0\",50.0,\"b\",9999,true],[\"TOR? 10-0\",10.0,\"b\",9999,true],[\"TUPE135-0\",135.0,\"b\",9999,true],[\"TUPE400-0\",400.0,\"b\",9999,true],[\"TUPE 17-0\",17.0,\"b\",9999,true],[\"TUPE 17-0\",17.0,\"b\",9999,true],[\"TUPE 17-0\",17.0,\"b\",9999,false],[\"YDB?400-0\",400.0,\"b\",9999,true],[\"YDB? 20-0\",20.0,\"b\",9999,true],[\"YDB? 20-0\",20.0,\"b\",9999,true],[\"YDK?135-0\",135.0,\"b\",9999,true],[\"YDK? 11-0\",11.0,\"b\",9999,true],[\"YDK? 11-0\",11.0,\"b\",9999,true],[\"YDK?400-0\",400.0,\"b\",9999,true],[\"ORN?400-0\",400.0,\"b\",9999,true],[\"ORSHAMMAR\",11.0,\"b\",9999,true],[\"RASTHOLMA\",11.0,\"b\",9999,true],[\"ROLLFALLE\",11.0,\"b\",9999,true],[\"PPHALL ST1\",11.0,\"b\",9999,true],[\"PPMA400-0\",400.0,\"b\",9999,true],[\"ATTE135-0\",135.0,\"b\",9999,true],[\"ATTE 17-0\",17.0,\"b\",9999,false],[\"\\u00c4ST 11-0\",11.0,\"b\",9999,true],[\"\\u00c4ST 50-0\",50.0,\"b\",9999,true],[\"\\u00c4ST 50-0\",50.0,\"b\",9999,true],[\"\\u00c4ST 50-02_\",50.0,\"b\",9999,true],[\"TTER 50-0\",50.0,\"b\",9999,true],[\"TTER135-0\",135.0,\"b\",9999,true],[\"TTER 17-0\",17.0,\"b\",9999,true],[\"RKEBO ST3\",11.0,\"b\",9999,true],[\"VERG\\u00c5RD ST\",11.0,\"b\",9999,true],[\"TUPE 17-1\",17.0,\"b\",9999,true]]}",
+      "orient": "split",
+      "dtype": {
+        "name": "object",
+        "vn_kv": "float64",
+        "type": "object",
+        "zone": "object",
+        "in_service": "bool"
+      }
+    },
+    "load": {
+      "_module": "pandas.core.frame",
+      "_class": "DataFrame",
+      "_object": "{\"columns\":[\"name\",\"bus\",\"p_mw\",\"q_mvar\",\"const_z_percent\",\"const_i_percent\",\"sn_mva\",\"scaling\",\"in_service\",\"type\"],\"index\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72],\"data\":[[\"'2 '\",11,150.0,60.0,0.0,0.0,null,1.0,true,null],[\"'1 '\",11,50.0,20.0,0.0,0.0,null,1.0,true,null],[\"'1 '\",21,6.0,0.5,0.0,0.0,null,1.0,true,null],[\"'3 '\",41,125.0,12.5,0.0,0.0,null,1.0,true,null],[\"'4 '\",41,100.0,10.0,0.0,0.0,null,1.0,true,null],[\"'2 '\",41,175.0,17.5,0.0,0.0,null,1.0,true,null],[\"'1 '\",41,100.0,10.0,0.0,0.0,null,1.0,true,null],[\"'2 '\",61,200.0,75.5,0.0,0.0,null,1.0,true,null],[\"'3 '\",61,200.0,70.0,0.0,0.0,null,1.0,true,null],[\"'1 '\",61,400.0,156.5,0.0,0.0,null,1.0,true,null],[\"'1 '\",71,150.0,50.0,0.0,0.0,null,1.0,true,null],[\"'2 '\",71,255.0,70.0,0.0,0.0,null,1.0,true,null],[\"'3 '\",71,135.0,40.0,0.0,0.0,null,1.0,true,null],[\"'1 '\",81,25.0,12.5,0.0,0.0,null,1.0,true,null],[\"'2 '\",81,75.0,37.5,0.0,0.0,null,1.0,true,null],[\"'1 '\",91,2.5,0.5,0.0,0.0,null,1.0,true,null],[\"'1 '\",102,1.0,1.0,0.0,0.0,null,1.0,true,null],[\"'1 '\",111,2.5,0.5,0.0,0.0,null,1.0,true,null],[\"'1 '\",121,4.5,0.8,0.0,0.0,null,1.0,true,null],[\"'1 '\",131,1000.0,250.0,0.0,0.0,null,1.0,true,null],[\"'2 '\",131,1000.0,250.0,0.0,0.0,null,1.0,true,null],[\"'1 '\",142,150.0,40.0,0.0,0.0,null,1.0,true,null],[\"'2 '\",142,150.0,40.0,0.0,0.0,null,1.0,true,null],[\"'1 '\",151,300.0,100.0,0.0,0.0,null,1.0,true,null],[\"'1 '\",181,2.5,0.5,0.0,0.0,null,1.0,true,null],[\"'1 '\",191,4.5,0.8,0.0,0.0,null,1.0,true,null],[\"'1 '\",201,200.0,72.5,0.0,0.0,null,1.0,true,null],[\"'3 '\",201,100.0,40.0,0.0,0.0,null,1.0,true,null],[\"'2 '\",201,100.0,37.5,0.0,0.0,null,1.0,true,null],[\"'1 '\",211,1.5,0.38,0.0,0.0,null,1.0,true,null],[\"'1 '\",221,8.0,1.5,0.0,0.0,null,1.0,true,null],[\"'1 '\",231,8.0,1.5,0.0,0.0,null,1.0,true,null],[\"'4 '\",251,150.0,50.0,0.0,0.0,null,1.0,true,null],[\"'1 '\",251,150.0,50.0,0.0,0.0,null,1.0,true,null],[\"'2 '\",251,225.0,87.5,0.0,0.0,null,1.0,true,null],[\"'3 '\",251,175.0,62.700000000000003,0.0,0.0,null,1.0,true,null],[\"'1 '\",261,1.5,0.38,0.0,0.0,null,1.0,true,null],[\"'2 '\",281,150.0,37.5,0.0,0.0,null,1.0,true,null],[\"'1 '\",281,50.0,12.5,0.0,0.0,null,1.0,true,null],[\"'3 '\",292,200.0,75.0,0.0,0.0,null,1.0,true,null],[\"'1 '\",292,400.0,150.0,0.0,0.0,null,1.0,true,null],[\"'2 '\",292,200.0,75.0,0.0,0.0,null,1.0,true,null],[\"'1 '\",312,375.0,50.0,0.0,0.0,null,1.0,true,null],[\"'2 '\",312,225.0,30.0,0.0,0.0,null,1.0,true,null],[\"'3 '\",331,75.0,25.0,0.0,0.0,null,1.0,true,null],[\"'1 '\",331,150.0,38.75,0.0,0.0,null,1.0,true,null],[\"'2 '\",331,75.0,21.25,0.0,0.0,null,1.0,true,null],[\"'1 '\",341,2.5,0.5,0.0,0.0,null,1.0,true,null],[\"'1 '\",351,1.5,0.38,0.0,0.0,null,1.0,true,null],[\"'1 '\",361,1.5,0.38,0.0,0.0,null,1.0,true,null],[\"'1 '\",371,8.0,1.5,0.0,0.0,null,1.0,true,null],[\"'1 '\",381,25.0,7.5,0.0,0.0,null,1.0,true,null],[\"'2 '\",381,75.0,22.5,0.0,0.0,null,1.0,true,null],[\"'1 '\",401,70.0,23.75,0.0,0.0,null,1.0,true,null],[\"'2 '\",401,210.0,71.25,0.0,0.0,null,1.0,true,null],[\"'1 '\",412,1.0,1.0,0.0,0.0,null,1.0,true,null],[\"'1 '\",421,75.0,25.0,0.0,0.0,null,1.0,true,null],[\"'2 '\",421,225.0,75.0,0.0,0.0,null,1.0,true,null],[\"'2 '\",431,142.5,75.0,0.0,0.0,null,1.0,true,null],[\"'1 '\",431,150.0,75.0,0.0,0.0,null,1.0,true,null],[\"'3 '\",431,147.5,75.0,0.0,0.0,null,1.0,true,null],[\"'4 '\",431,150.0,75.0,0.0,0.0,null,1.0,true,null],[\"'2 '\",441,325.0,112.0,0.0,0.0,null,1.0,true,null],[\"'1 '\",441,375.0,137.0,0.0,0.0,null,1.0,true,null],[\"'1 '\",481,1.5,0.38,0.0,0.0,null,1.0,true,null],[\"'2 '\",501,275.0,51.0,0.0,0.0,null,1.0,true,null],[\"'1 '\",501,200.0,60.0,0.0,0.0,null,1.0,true,null],[\"'4 '\",501,200.0,60.0,0.0,0.0,null,1.0,true,null],[\"'3 '\",501,225.0,132.0,0.0,0.0,null,1.0,true,null],[\"'2 '\",511,75.0,30.0,0.0,0.0,null,1.0,true,null],[\"'1 '\",511,25.0,10.0,0.0,0.0,null,1.0,true,null],[\"'1 '\",542,225.0,4.0,0.0,0.0,null,1.0,true,null],[\"'1 '\",551,1.5,0.38,0.0,0.0,null,1.0,true,null]]}",
+      "orient": "split",
+      "dtype": {
+        "name": "object",
+        "bus": "uint32",
+        "p_mw": "float64",
+        "q_mvar": "float64",
+        "const_z_percent": "float64",
+        "const_i_percent": "float64",
+        "sn_mva": "float64",
+        "scaling": "float64",
+        "in_service": "bool",
+        "type": "object"
+      }
+    },
+    "sgen": {
+      "_module": "pandas.core.frame",
+      "_class": "DataFrame",
+      "_object": "{\"columns\":[\"name\",\"bus\",\"p_mw\",\"q_mvar\",\"sn_mva\",\"scaling\",\"in_service\",\"type\",\"current_source\"],\"index\":[],\"data\":[]}",
+      "orient": "split",
+      "dtype": {
+        "name": "object",
+        "bus": "int64",
+        "p_mw": "float64",
+        "q_mvar": "float64",
+        "sn_mva": "float64",
+        "scaling": "float64",
+        "in_service": "bool",
+        "type": "object",
+        "current_source": "bool"
+      }
+    },
+    "motor": {
+      "_module": "pandas.core.frame",
+      "_class": "DataFrame",
+      "_object": "{\"columns\":[\"name\",\"bus\",\"pn_mech_mw\",\"loading_percent\",\"cos_phi\",\"cos_phi_n\",\"efficiency_percent\",\"efficiency_n_percent\",\"lrc_pu\",\"vn_kv\",\"scaling\",\"in_service\",\"rx\"],\"index\":[],\"data\":[]}",
+      "orient": "split",
+      "dtype": {
+        "name": "object",
+        "bus": "int64",
+        "pn_mech_mw": "float64",
+        "loading_percent": "float64",
+        "cos_phi": "float64",
+        "cos_phi_n": "float64",
+        "efficiency_percent": "float64",
+        "efficiency_n_percent": "float64",
+        "lrc_pu": "float64",
+        "vn_kv": "float64",
+        "scaling": "float64",
+        "in_service": "bool",
+        "rx": "float64"
+      }
+    },
+    "asymmetric_load": {
+      "_module": "pandas.core.frame",
+      "_class": "DataFrame",
+      "_object": "{\"columns\":[\"name\",\"bus\",\"p_a_mw\",\"q_a_mvar\",\"p_b_mw\",\"q_b_mvar\",\"p_c_mw\",\"q_c_mvar\",\"sn_mva\",\"scaling\",\"in_service\",\"type\"],\"index\":[],\"data\":[]}",
+      "orient": "split",
+      "dtype": {
+        "name": "object",
+        "bus": "uint32",
+        "p_a_mw": "float64",
+        "q_a_mvar": "float64",
+        "p_b_mw": "float64",
+        "q_b_mvar": "float64",
+        "p_c_mw": "float64",
+        "q_c_mvar": "float64",
+        "sn_mva": "float64",
+        "scaling": "float64",
+        "in_service": "bool",
+        "type": "object"
+      }
+    },
+    "asymmetric_sgen": {
+      "_module": "pandas.core.frame",
+      "_class": "DataFrame",
+      "_object": "{\"columns\":[\"name\",\"bus\",\"p_a_mw\",\"q_a_mvar\",\"p_b_mw\",\"q_b_mvar\",\"p_c_mw\",\"q_c_mvar\",\"sn_mva\",\"scaling\",\"in_service\",\"type\",\"current_source\"],\"index\":[],\"data\":[]}",
+      "orient": "split",
+      "dtype": {
+        "name": "object",
+        "bus": "int64",
+        "p_a_mw": "float64",
+        "q_a_mvar": "float64",
+        "p_b_mw": "float64",
+        "q_b_mvar": "float64",
+        "p_c_mw": "float64",
+        "q_c_mvar": "float64",
+        "sn_mva": "float64",
+        "scaling": "float64",
+        "in_service": "bool",
+        "type": "object",
+        "current_source": "bool"
+      }
+    },
+    "storage": {
+      "_module": "pandas.core.frame",
+      "_class": "DataFrame",
+      "_object": "{\"columns\":[\"name\",\"bus\",\"p_mw\",\"q_mvar\",\"sn_mva\",\"soc_percent\",\"min_e_mwh\",\"max_e_mwh\",\"scaling\",\"in_service\",\"type\"],\"index\":[],\"data\":[]}",
+      "orient": "split",
+      "dtype": {
+        "name": "object",
+        "bus": "int64",
+        "p_mw": "float64",
+        "q_mvar": "float64",
+        "sn_mva": "float64",
+        "soc_percent": "float64",
+        "min_e_mwh": "float64",
+        "max_e_mwh": "float64",
+        "scaling": "float64",
+        "in_service": "bool",
+        "type": "object"
+      }
+    },
+    "gen": {
+      "_module": "pandas.core.frame",
+      "_class": "DataFrame",
+      "_object": "{\"columns\":[\"name\",\"bus\",\"p_mw\",\"vm_pu\",\"sn_mva\",\"min_q_mvar\",\"max_q_mvar\",\"scaling\",\"slack\",\"in_service\",\"type\",\"min_p_mw\",\"max_p_mw\",\"power_station_trafo\"],\"index\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37],\"data\":[[null,12,200.0,1.02941,400.0,-40.0,200.0,1.0,false,true,null,0.0,380.0,null],[null,14,364.100000000000023,1.02941,600.0,-60.0,300.0,1.0,false,true,null,0.0,570.0,null],[null,42,0.0,1.02,200.0,-20.0,100.0,1.0,false,false,null,0.0,180.0,null],[null,62,600.0,1.025,700.0,0.0,350.0,1.0,false,true,null,0.0,630.0,null],[null,63,400.0,1.025,700.0,0.0,350.0,1.0,false,true,null,0.0,630.0,null],[null,72,0.0,1.02,300.0,-200.0,300.0,1.0,false,true,null,0.0,0.0,null],[null,82,539.0,1.045,600.0,0.0,300.0,1.0,false,true,null,0.0,540.0,null],[null,83,539.0,1.045,600.0,0.0,300.0,1.0,false,true,null,0.0,540.0,null],[null,102,4.9,1.001,6.0,-2.0,2.0,1.0,false,true,null,0.0,5.0,null],[null,136,800.0,1.03,1500.0,-100.0,300.0,1.0,false,true,null,0.0,1350.0,null],[null,137,200.0,1.03,750.0,-50.0,200.0,1.0,false,true,null,0.0,715.0,null],[null,138,200.0,1.03,750.0,-50.0,200.0,1.0,false,true,null,0.0,715.0,null],[null,144,359.0,0.97778,400.0,-40.0,200.0,1.0,false,true,null,0.0,360.0,null],[null,145,0.0,0.97778,200.0,-20.0,100.0,1.0,false,false,null,0.0,180.0,null],[null,152,300.0,1.02897,500.0,-50.0,250.0,1.0,false,true,null,0.0,475.0,null],[null,202,629.0,1.05,700.0,0.0,350.0,1.0,false,true,null,0.0,630.0,null],[null,203,170.0,1.05,200.0,-20.0,100.0,1.0,false,true,null,0.0,180.0,null],[null,208,0.0,1.05,200.0,-20.0,100.0,1.0,false,false,null,0.0,180.0,null],[null,274,250.0,1.0472,300.0,-30.0,150.0,1.0,false,true,null,0.0,285.0,null],[null,283,450.0,1.1,500.0,-50.0,250.0,1.0,false,true,null,0.0,475.0,null],[null,284,300.0,1.1,350.0,-35.0,175.0,1.0,false,true,null,0.0,315.0,null],[null,323,400.0,1.11704,700.0,-100.0,350.0,1.0,false,true,null,0.0,665.0,null],[null,335,530.0,1.03,600.0,0.0,300.0,1.0,false,true,null,0.0,540.0,null],[null,336,160.0,1.03,200.0,-20.0,100.0,1.0,false,true,null,0.0,180.0,null],[null,337,0.0,1.03,200.0,-20.0,100.0,1.0,false,false,null,0.0,180.0,null],[null,382,310.0,1.02941,350.0,-40.0,175.0,1.0,false,true,null,0.0,332.5,null],[null,393,400.0,1.05926,600.0,-60.0,300.0,1.0,false,true,null,0.0,570.0,null],[null,409,200.0,1.02222,250.0,-25.0,125.0,1.0,false,true,null,0.0,237.5,null],[null,412,4.9,1.00299,6.0,-2.0,2.0,1.0,false,true,null,0.0,5.0,null],[null,427,400.0,1.03,500.0,-199.0,250.0,1.0,false,true,null,0.0,475.0,null],[null,428,100.0,1.03,300.0,-60.0,150.0,1.0,false,true,null,0.0,285.0,null],[null,429,50.0,1.08815,300.0,-30.0,150.0,1.0,false,false,null,0.0,285.0,null],[null,432,530.0,1.05,600.0,0.0,300.0,1.0,false,true,null,0.0,540.0,null],[null,433,530.0,1.05,600.0,0.0,300.0,1.0,false,true,null,0.0,540.0,null],[null,481,4.9,0.96239,6.0,-2.0,2.0,1.0,false,true,null,0.0,5.0,null],[null,515,350.0,1.10259,600.0,-50.0,300.0,1.0,false,false,null,0.0,570.0,null],[null,545,180.0,0.97778,200.0,-20.0,100.0,1.0,false,true,null,0.0,180.0,null],[null,50050,400.0,1.08815,500.0,-50.0,250.0,1.0,false,true,null,0.0,475.0,null]]}",
+      "orient": "split",
+      "dtype": {
+        "name": "object",
+        "bus": "uint32",
+        "p_mw": "float64",
+        "vm_pu": "float64",
+        "sn_mva": "float64",
+        "min_q_mvar": "float64",
+        "max_q_mvar": "float64",
+        "scaling": "float64",
+        "slack": "bool",
+        "in_service": "bool",
+        "type": "object",
+        "min_p_mw": "float64",
+        "max_p_mw": "float64",
+        "power_station_trafo": "float64"
+      }
+    },
+    "switch": {
+      "_module": "pandas.core.frame",
+      "_class": "DataFrame",
+      "_object": "{\"columns\":[\"bus\",\"element\",\"et\",\"type\",\"closed\",\"name\",\"z_ohm\"],\"index\":[],\"data\":[]}",
+      "orient": "split",
+      "dtype": {
+        "bus": "int64",
+        "element": "int64",
+        "et": "object",
+        "type": "object",
+        "closed": "bool",
+        "name": "object",
+        "z_ohm": "float64"
+      }
+    },
+    "shunt": {
+      "_module": "pandas.core.frame",
+      "_class": "DataFrame",
+      "_object": "{\"columns\":[\"bus\",\"name\",\"q_mvar\",\"p_mw\",\"vn_kv\",\"step\",\"max_step\",\"in_service\"],\"index\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26],\"data\":[[13,null,0.0,0.0,400.0,1,1,true],[61,null,0.0,0.0,400.0,1,1,true],[71,null,0.0,0.0,400.0,1,1,true],[131,null,0.0,0.0,400.0,1,1,true],[141,null,6.05,0.0,11.0,1,1,true],[151,null,-400.0,0.0,400.0,1,1,true],[201,null,0.0,0.0,400.0,1,1,true],[251,null,100.0,0.0,400.0,1,1,true],[271,null,-150.0,0.0,400.0,1,1,true],[291,null,0.0,0.0,400.0,1,1,true],[292,null,215.680000000000007,0.0,135.0,1,1,true],[311,null,5.0,0.0,50.0,1,1,true],[312,null,75.488,0.0,135.0,1,1,true],[331,null,-100.0,0.0,400.0,1,1,true],[383,null,-100.0,0.0,400.0,1,1,true],[401,null,53.920000000000002,0.0,135.0,1,1,true],[402,null,0.0,0.0,400.0,1,1,true],[422,null,-200.0,0.0,400.0,1,1,true],[441,null,215.680000000000007,0.0,135.0,1,1,true],[442,null,6.05,0.0,11.0,1,1,true],[444,null,0.0,0.0,400.0,1,1,true],[451,null,0.0,0.0,400.0,1,1,true],[501,null,200.0,0.0,400.0,1,1,true],[541,null,5.0,0.0,50.0,1,1,true],[542,null,107.840000000000003,0.0,135.0,1,1,true],[71,null,200.0,0.0,400.0,1,1,true],[331,null,200.0,0.0,400.0,1,1,true]]}",
+      "orient": "split",
+      "dtype": {
+        "bus": "uint32",
+        "name": "object",
+        "q_mvar": "float64",
+        "p_mw": "float64",
+        "vn_kv": "float64",
+        "step": "uint32",
+        "max_step": "uint32",
+        "in_service": "bool"
+      }
+    },
+    "ext_grid": {
+      "_module": "pandas.core.frame",
+      "_class": "DataFrame",
+      "_object": "{\"columns\":[\"name\",\"bus\",\"vm_pu\",\"va_degree\",\"in_service\"],\"index\":[0],\"data\":[[\"\\u00c4LL 17-0\",135,1.03,0.0,true]]}",
+      "orient": "split",
+      "dtype": {
+        "name": "object",
+        "bus": "uint32",
+        "vm_pu": "float64",
+        "va_degree": "float64",
+        "in_service": "bool"
+      }
+    },
+    "line": {
+      "_module": "pandas.core.frame",
+      "_class": "DataFrame",
+      "_object": "{\"columns\":[\"name\",\"std_type\",\"from_bus\",\"to_bus\",\"length_km\",\"r_ohm_per_km\",\"x_ohm_per_km\",\"c_nf_per_km\",\"g_us_per_km\",\"max_i_ka\",\"df\",\"parallel\",\"type\",\"in_service\",\"alpha\",\"temperature_degree_celsius\"],\"index\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74],\"data\":[[null,null,11,511,1.0,2.103165,14.716687499999999,209.586756335006214,0.0,1.0,1.0,2,null,true,null,65.0],[null,null,13,422,1.0,1.600000000000001,12.799999999999999,397.887357729738312,0.0,0.84,1.0,1,null,true,null,65.0],[null,null,13,151,1.0,8.000000000000004,71.999999999999986,2785.211504108167901,0.0,0.84,1.0,1,null,true,null,65.0],[null,null,13,402,1.0,6.399999999999994,64.000000000000014,2387.324146378430214,0.0,0.84,1.0,1,null,true,null,65.0],[null,null,13,271,1.0,9.599999999999989,96.0,3580.986219567645548,0.0,1.26,1.0,1,null,true,null,65.0],[null,null,21,551,1.0,0.14278,0.53845,10.522640865579858,0.0,0.47,1.0,1,null,true,null,65.0],[null,null,31,121,1.0,0.2904,0.97405,331.463187265765498,0.0,0.47,1.0,1,null,true,null,65.0],[null,null,31,241,1.0,0.2904,0.97405,331.463187265765498,0.0,0.47,1.0,1,null,true,null,65.0],[null,null,31,561,1.0,0.02904,0.097405,31.567922596739571,0.0,1.05,1.0,1,null,true,null,65.0],[null,null,41,331,1.0,3.199999999999997,32.000000000000007,1193.662073189215107,0.0,1.02,1.0,1,null,true,null,65.0],[null,null,51,91,1.0,0.02904,0.097405,31.567922596739571,0.0,0.47,1.0,1,null,true,null,65.0],[null,null,51,181,1.0,0.2904,0.97405,331.463187265765498,0.0,0.47,1.0,1,null,true,null,65.0],[null,null,71,291,1.0,4.799999999999994,48.0,1790.493109783822774,0.0,1.26,1.0,1,null,true,null,65.0],[null,null,71,41,1.0,9.599999999999996,71.999999999999986,2586.26782524329974,0.0,0.84,1.0,1,null,true,null,65.0],[null,null,101,311,1.0,0.3551,0.5373,1706.140989945118008,0.0,0.47,1.0,1,null,true,null,65.0],[null,null,101,242,1.0,0.3551,0.5373,1706.140989945118008,0.0,0.47,1.0,1,null,true,null,65.0],[null,null,141,261,1.0,0.14278,0.53845,10.522640865579858,0.0,0.95,1.0,1,null,true,null,65.0],[null,null,142,441,1.0,8.449110000000006,50.700127500000001,1117.796033786699809,0.0,1.0,1.0,1,null,true,null,65.0],[null,null,142,292,1.0,6.422490000000003,47.319389999999991,1117.796033786699809,0.0,2.97,1.0,2,null,true,null,65.0],[null,null,151,131,1.0,4.799999999999994,48.0,3978.873577297383235,0.0,0.84,1.0,2,null,true,null,65.0],[null,null,161,361,1.0,0.02904,0.097405,31.567922596739571,0.0,1.05,1.0,1,null,true,null,65.0],[null,null,181,161,1.0,0.02904,0.097405,31.567922596739571,0.0,1.05,1.0,1,null,true,null,65.0],[null,null,201,501,1.0,3.199999999999999,24.0,994.718394324345809,0.0,2.45,1.0,1,null,true,null,65.0],[null,null,201,291,1.0,3.199999999999997,32.000000000000007,1193.662073189215107,0.0,1.5,1.0,1,null,true,null,65.0],[null,null,211,351,1.0,0.14278,0.53845,10.522640865579858,0.0,0.47,1.0,1,null,true,null,65.0],[null,null,221,211,1.0,0.14278,0.53845,10.522640865579858,0.0,0.47,1.0,1,null,true,null,65.0],[null,null,231,21,1.0,0.14278,0.53845,10.522640865579858,0.0,0.47,1.0,1,null,true,null,65.0],[null,null,251,81,1.0,1.6,23.999999999999996,994.718394324345809,0.0,1.5,1.0,1,null,true,null,65.0],[null,null,261,551,1.0,0.14278,0.53845,10.522640865579858,0.0,0.47,1.0,1,null,true,null,65.0],[null,null,271,201,1.0,15.999999999999982,160.0,5968.310365946074853,0.0,1.02,1.0,1,null,true,null,65.0],[null,null,271,451,1.0,6.399999999999994,64.000000000000014,2387.324146378430214,0.0,0.84,1.0,1,null,true,null,65.0],[null,null,291,444,1.0,3.199999999999997,32.000000000000007,1193.662073189215107,0.0,0.84,1.0,2,null,true,null,65.0],[null,null,301,361,1.0,0.2904,0.97405,331.463187265765498,0.0,0.47,1.0,1,null,true,null,65.0],[null,null,301,171,1.0,0.2904,0.97405,331.463187265765498,0.0,0.47,1.0,1,null,true,null,65.0],[null,null,312,441,1.0,2.535097500000002,20.280779999999996,454.104638725846769,0.0,1.07,1.0,2,null,true,null,65.0],[null,null,312,542,1.0,1.689457499999999,10.14039,209.586756335006214,0.0,1.07,1.0,2,null,true,null,65.0],[null,null,331,431,1.0,4.799999999999994,48.0,1790.493109783822774,0.0,0.84,1.0,2,null,true,null,65.0],[null,null,341,111,1.0,0.2904,0.97405,331.463187265765498,0.0,0.47,1.0,1,null,true,null,65.0],[null,null,351,141,1.0,0.14278,0.53845,10.522640865579858,0.0,1.05,1.0,1,null,true,null,65.0],[null,null,371,221,1.0,0.14278,0.53845,10.522640865579858,0.0,0.95,1.0,1,null,true,null,65.0],[null,null,381,281,1.0,6.625959999999996,49.70196,868.117871410338353,0.0,1.26,1.0,2,null,true,null,65.0],[null,null,383,451,1.0,1.599999999999998,16.000000000000004,596.831036594607554,0.0,2.45,1.0,1,null,true,null,65.0],[null,null,383,71,1.0,9.599999999999987,128.0,4774.648292756860428,0.0,1.26,1.0,2,null,true,null,65.0],[null,null,391,401,1.0,6.307672499999996,42.050542499999999,454.104638725846769,0.0,1.26,1.0,2,null,true,null,65.0],[null,null,402,383,1.0,6.399999999999994,64.000000000000014,2387.324146378430214,0.0,1.26,1.0,2,null,true,null,65.0],[null,null,411,541,1.0,0.3551,0.5373,1706.140989945118008,0.0,0.47,1.0,1,null,true,null,65.0],[null,null,421,321,1.0,2.9433375,18.9230175,279.449008446674952,0.0,1.0,1.0,2,null,true,null,65.0],[null,null,422,151,1.0,7.999999999999991,80.0,2984.155182973037427,0.0,0.84,1.0,1,null,true,null,65.0],[null,null,422,402,1.0,6.399999999999997,56.0,2088.908628081126153,0.0,1.02,1.0,1,null,true,null,65.0],[null,null,442,231,1.0,0.14278,0.53845,10.522640865579858,0.0,0.95,1.0,1,null,true,null,65.0],[null,null,443,371,1.0,0.05445,0.2057,10.522640865579858,0.0,1.05,1.0,1,null,true,null,65.0],[null,null,444,331,1.0,17.600000000000008,128.0,4774.648292756860428,0.0,0.84,1.0,1,null,true,null,65.0],[null,null,444,61,1.0,6.399999999999994,64.000000000000014,2387.324146378430214,0.0,0.84,1.0,2,null,true,null,65.0],[null,null,451,291,1.0,9.600000000000012,133.280000000000001,4774.648292756860428,0.0,1.26,1.0,1,null,true,null,65.0],[null,null,451,201,1.0,16.000000000000014,106.719999999999985,3978.873577297383235,0.0,1.26,1.0,1,null,true,null,65.0],[null,null,461,51,1.0,0.02904,0.097405,31.567922596739571,0.0,0.47,1.0,1,null,true,null,65.0],[null,null,461,491,1.0,0.02904,0.097405,31.567922596739571,0.0,0.47,1.0,1,null,true,null,65.0],[null,null,471,241,1.0,0.02904,0.097405,31.567922596739571,0.0,0.95,1.0,1,null,true,null,65.0],[null,null,471,191,1.0,0.14278,0.53845,10.522640865579858,0.0,0.47,1.0,1,null,true,null,65.0],[null,null,471,351,1.0,0.14278,0.53845,10.522640865579858,0.0,1.05,1.0,1,null,true,null,65.0],[null,null,481,51,1.0,0.02904,0.097405,31.567922596739571,0.0,0.47,1.0,1,null,true,null,65.0],[null,null,491,171,1.0,0.02904,0.097405,31.567922596739571,0.0,0.47,1.0,1,null,true,null,65.0],[null,null,501,81,1.0,3.199999999999997,32.000000000000007,1193.662073189215107,0.0,1.02,1.0,1,null,true,null,65.0],[null,null,501,251,1.0,1.599999999999998,16.000000000000004,596.831036594607554,0.0,0.84,1.0,1,null,true,null,65.0],[null,null,501,291,1.0,1.599999999999998,16.000000000000004,596.831036594607554,0.0,0.84,1.0,1,null,true,null,65.0],[null,null,511,321,1.0,2.103164999999999,10.512179999999999,139.724504223337476,0.0,1.0,1.0,2,null,true,null,65.0],[null,null,521,171,1.0,0.2904,0.97405,331.463187265765498,0.0,0.47,1.0,1,null,true,null,65.0],[null,null,521,341,1.0,0.2904,0.97405,331.463187265765498,0.0,0.47,1.0,1,null,true,null,65.0],[null,null,521,461,1.0,0.2904,0.97405,331.463187265765498,0.0,0.47,1.0,1,null,true,null,65.0],[null,null,522,411,1.0,1.229675,3.904975,254.647908947032533,0.0,0.47,1.0,1,null,true,null,65.0],[null,null,531,242,1.0,1.229675,3.904975,254.647908947032533,0.0,1.05,1.0,1,null,true,null,65.0],[null,null,532,522,1.0,1.229675,3.904975,254.647908947032533,0.0,1.05,1.0,1,null,true,null,65.0],[null,null,541,311,1.0,0.3551,0.5373,1706.140989945118008,0.0,1.05,1.0,1,null,false,null,65.0],[null,null,542,292,1.0,1.6894575,13.519304999999999,314.380134502509293,0.0,1.26,1.0,2,null,true,null,65.0],[null,null,561,301,1.0,0.02904,0.097405,31.567922596739571,0.0,1.05,1.0,1,null,true,null,65.0]]}",
+      "orient": "split",
+      "dtype": {
+        "name": "object",
+        "std_type": "object",
+        "from_bus": "uint32",
+        "to_bus": "uint32",
+        "length_km": "float64",
+        "r_ohm_per_km": "float64",
+        "x_ohm_per_km": "float64",
+        "c_nf_per_km": "float64",
+        "g_us_per_km": "float64",
+        "max_i_ka": "float64",
+        "df": "float64",
+        "parallel": "uint32",
+        "type": "object",
+        "in_service": "bool",
+        "alpha": "float64",
+        "temperature_degree_celsius": "float64"
+      }
+    },
+    "trafo": {
+      "_module": "pandas.core.frame",
+      "_class": "DataFrame",
+      "_object": "{\"columns\":[\"name\",\"std_type\",\"hv_bus\",\"lv_bus\",\"sn_mva\",\"vn_hv_kv\",\"vn_lv_kv\",\"vk_percent\",\"vkr_percent\",\"pfe_kw\",\"i0_percent\",\"shift_degree\",\"tap_side\",\"tap_neutral\",\"tap_min\",\"tap_max\",\"tap_step_percent\",\"tap_step_degree\",\"tap_pos\",\"tap_phase_shifter\",\"parallel\",\"df\",\"in_service\",\"pt_percent\",\"oltc\",\"max_loading_percent\"],\"index\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52],\"data\":[[\"'CT11_T1'\",null,13,12,300.0,400.0,17.0,15.0,0.3,0.0,0.0,0.0,null,null,null,null,null,null,null,false,1,1.0,true,null,false,100.0],[\"'CT11_T401'\",null,13,11,200.0,400.0,135.0,0.8,0.3,0.0,0.0,0.0,null,null,null,null,null,null,null,false,1,1.0,true,null,false,100.0],[\"'CT11_T2'\",null,13,14,600.0,400.0,17.0,15.0,0.3,0.0,0.0,0.0,null,null,null,null,null,null,null,false,1,1.0,true,null,false,100.0],[\"'ATOMSBERG_G1'\",null,41,42,1500.0,400.0,20.0,15.0,0.3,0.0,0.0,0.0,null,null,null,null,null,null,null,false,1,1.0,false,null,false,100.0],[\"'BLOCKET_G2_T'\",null,61,63,700.0,400.0,20.0,15.000299999999999,0.3,0.0,0.0,0.0,null,null,null,null,null,null,null,false,1,1.0,true,null,false,100.0],[\"'BLOCKET_G1_T'\",null,61,62,1500.0,400.0,20.0,15.000299999999999,0.3,0.0,0.0,0.0,null,null,null,null,null,null,null,false,1,1.0,true,null,false,100.0],[\"'DALBO_G1_TRA'\",null,71,72,6.0,400.0,17.0,9.999900000000002,0.3,0.0,0.0,0.0,null,null,null,null,null,null,null,false,1,1.0,true,null,false,100.0],[\"'FT47_T21'\",null,81,83,1500.0,400.0,20.0,15.0,0.3,0.0,0.0,0.0,null,null,null,null,null,null,null,false,1,1.0,true,null,false,100.0],[\"'FT47_T11'\",null,81,82,1500.0,400.0,20.0,15.0,0.3,0.0,0.0,0.0,null,null,null,null,null,null,null,false,1,1.0,true,null,false,100.0],[\"'ST3_T1'\",null,101,102,90.0,50.0,10.0,1.50010799611228,0.018,0.0,0.0,0.0,null,null,null,null,null,null,null,false,1,1.0,true,null,false,100.0],[\"'H\\u00c4LLAN_G2_T'\",null,131,136,1500.0,400.0,17.0,15.0,0.3,0.0,0.0,0.0,null,null,null,null,null,null,null,false,1,1.0,true,null,false,100.0],[\"'H\\u00c4LLAN_G3_T'\",null,131,137,300.0,400.0,17.0,15.0,0.3,0.0,0.0,0.0,null,null,null,null,null,null,null,false,1,1.0,true,null,false,100.0],[\"'H\\u00c4LLAN_G1_T'\",null,131,135,1500.0,400.0,17.0,15.0,0.3,0.0,0.0,0.0,null,null,null,null,null,null,null,false,1,1.0,true,null,false,100.0],[\"'H\\u00c4LLAN_G4_T'\",null,131,138,300.0,400.0,17.0,15.0,0.3,0.0,0.0,0.0,null,null,null,null,null,null,null,false,1,1.0,true,null,false,100.0],[\"XT191-T1\",null,142,141,90.0,135.0,11.0,9.9,0.3,0.0,0.0,0.0,\"lv\",13.0,1.0,25.0,1.24999988,null,12.0,false,1,1.0,true,null,false,100.0],[\"'H\\u00c4STSJ\\u00d6_G2'\",null,142,145,1500.0,135.0,20.0,15.0,0.3,0.0,0.0,0.0,null,null,null,null,null,null,null,false,1,1.0,false,null,false,100.0],[\"'H\\u00c4STSJ\\u00d6_G1'\",null,142,144,600.0,135.0,20.0,15.0,0.3,0.0,0.0,0.0,null,null,null,null,null,null,null,false,1,1.0,true,null,false,100.0],[\"'JAURAS_G1_TR'\",null,151,152,500.0,400.0,17.0,15.0,0.3,0.0,0.0,0.0,null,null,null,null,null,null,null,false,1,1.0,true,null,false,100.0],[\"'FT44_T11'\",null,201,202,1500.0,400.0,20.0,14.979999999999997,0.3,0.0,0.0,0.0,null,null,null,null,null,null,null,false,1,1.0,true,null,false,100.0],[\"'FT44_T12'\",null,201,203,300.0,400.0,20.0,15.0,0.3,0.0,0.0,0.0,null,null,null,null,null,null,null,false,1,1.0,true,null,false,100.0],[\"'FT44_T13'\",null,201,208,1500.0,400.0,20.0,15.0,0.3,0.0,0.0,0.0,null,null,null,null,null,null,null,false,1,1.0,true,null,false,100.0],[\"ST6_T1\",null,242,241,30.0,50.0,11.0,7.5,0.3,0.0,0.0,0.0,\"lv\",8.0,1.0,15.0,1.24999964,null,8.0,false,1,1.0,true,null,false,100.0],[\"'NJAGGO_G1_TR'\",null,271,274,350.0,400.0,17.0,15.0,0.3,0.0,0.0,0.0,null,null,null,null,null,null,null,false,1,1.0,true,null,false,100.0],[\"'NORRSELE_G1_'\",null,281,283,700.0,220.0,17.0,15.0,0.3,0.0,0.0,0.0,null,null,null,null,null,null,null,false,1,1.0,true,null,false,100.0],[\"'NORRSELE_G2_'\",null,281,284,400.0,220.0,17.0,14.999950000000002,0.3,0.0,0.0,0.0,null,null,null,null,null,null,null,false,1,1.0,true,null,false,100.0],[\"FT42_T401\",null,291,292,1500.0,400.0,135.0,1.0,0.3,0.0,0.0,0.0,\"lv\",13.0,1.0,25.0,1.00000012,null,7.0,false,1,1.0,true,null,false,100.0],[\"FT42_T402\",null,291,292,350.0,400.0,135.0,1.0,0.3,0.0,0.0,0.0,\"lv\",13.0,1.0,25.0,1.00000012,null,7.0,false,1,1.0,true,null,false,100.0],[\"T1\",null,312,311,30.0,135.0,50.0,9.374399999999998,0.3,0.0,0.0,0.0,\"lv\",12.0,1.0,15.0,1.79285705,null,8.0,false,1,1.0,true,null,false,100.0],[\"'OLM\\u00c5FALLET_'\",null,321,323,600.0,135.0,17.0,15.000299999999999,0.3,0.0,0.0,0.0,null,null,null,null,null,null,null,false,1,1.0,true,null,false,100.0],[\"'RUTHUVUD_G2_'\",null,331,336,250.0,400.0,20.0,15.0,0.3,0.0,0.0,0.0,null,null,null,null,null,null,null,false,1,1.0,true,null,false,100.0],[\"'RUTHUVUD_G1_'\",null,331,335,750.0,400.0,20.0,15.0,0.3,0.0,0.0,0.0,null,null,null,null,null,null,null,false,1,1.0,true,null,false,100.0],[\"'RUTHUVUD_G3_'\",null,331,337,1500.0,400.0,20.0,15.0,0.3,0.0,0.0,0.0,null,null,null,null,null,null,null,false,1,1.0,false,null,false,100.0],[\"'CT31_T1'\",null,383,382,500.0,400.0,17.0,15.015000000000001,0.3,0.0,0.0,0.0,null,null,null,null,null,null,null,false,1,1.0,true,null,false,100.0],[\"'CT31_T401'\",null,383,381,600.0,400.0,220.0,1.2,0.3,0.0,0.0,0.0,null,null,null,null,null,null,null,false,1,1.0,true,null,false,100.0],[\"'STORFORS_G1_'\",null,391,393,600.0,135.0,17.0,15.0,0.3,0.0,0.0,0.0,null,null,null,null,null,null,null,false,1,1.0,true,null,false,100.0],[\"'STORTR\\u00c4SK_G'\",null,401,409,300.0,135.0,17.0,15.0,0.3,0.0,0.0,0.0,null,null,null,null,null,null,null,false,1,1.0,true,null,false,100.0],[\"'CT22_T401'\",null,402,401,600.0,400.0,135.0,1.2,0.3,0.0,0.0,0.0,null,null,null,null,null,null,null,false,1,1.0,true,null,false,100.0],[\"'ST4_T1'\",null,411,412,30.0,50.0,10.0,1.50010799611228,0.018,0.0,0.0,0.0,null,null,null,null,null,null,null,false,1,1.0,true,null,false,100.0],[\"'STUPET_G4_TR'\",null,421,50050,600.0,135.0,17.0,15.0,0.3,0.0,0.0,0.0,null,null,null,null,null,null,null,false,1,1.0,true,null,false,100.0],[\"'STUPET_G3_TR'\",null,421,429,1500.0,135.0,17.0,15.0,0.3,0.0,0.0,0.0,null,null,null,null,null,null,null,false,1,1.0,false,null,false,100.0],[\"'STUPET_G2_TR'\",null,422,428,200.0,400.0,17.0,15.0,0.3,0.0,0.0,0.0,null,null,null,null,null,null,null,false,1,1.0,true,null,false,100.0],[\"'STUPET_G1_TR'\",null,422,427,600.0,400.0,17.0,15.0,0.3,0.0,0.0,0.0,null,null,null,null,null,null,null,false,1,1.0,true,null,false,100.0],[\"'CT112_T401'\",null,422,421,400.0,400.0,135.0,0.8,0.3,0.0,0.0,0.0,null,null,null,null,null,null,null,false,1,1.0,true,null,false,100.0],[\"'FT63_T11'\",null,431,432,750.0,400.0,20.0,15.0,0.3,0.0,0.0,0.0,null,null,null,null,null,null,null,false,1,1.0,true,null,false,100.0],[\"'FT63_T12'\",null,431,433,750.0,400.0,20.0,15.0,0.3,0.0,0.0,0.0,null,null,null,null,null,null,null,false,1,1.0,true,null,false,100.0],[\"FT50_T402\",null,444,441,1500.0,400.0,135.0,1.0,0.3,0.0,0.0,0.0,\"lv\",13.0,1.0,25.0,1.00000012,null,7.0,false,1,1.0,true,null,false,100.0],[\"XT201-T2\",null,441,443,30.0,135.0,11.0,9.9,0.3,0.0,0.0,0.0,\"hv\",13.0,1.0,25.0,1.24999988,null,9.0,false,1,1.0,true,null,false,100.0],[\"FT50_T401\",null,444,441,90.0,400.0,135.0,1.0,0.3,0.0,0.0,0.0,\"lv\",13.0,1.0,25.0,1.00000012,null,7.0,false,1,1.0,true,null,false,100.0],[\"XT201-T1\",null,441,442,30.0,135.0,11.0,9.9,0.3,0.0,0.0,0.0,\"lv\",13.0,1.0,25.0,1.24999988,null,10.0,false,1,1.0,true,null,false,100.0],[\"'VATTENDRAGET'\",null,511,515,1500.0,135.0,17.0,15.0,0.3,0.0,0.0,0.0,null,null,null,null,null,null,null,false,1,1.0,false,null,false,100.0],[\"ST5_T1\",null,522,521,30.0,50.0,11.0,7.5,0.3,0.0,0.0,0.0,\"lv\",8.0,1.0,15.0,1.24999964,null,5.0,false,1,1.0,true,null,false,100.0],[\"T11\",null,542,541,6.0,135.0,50.0,9.374399999999998,0.3,0.0,0.0,0.0,\"lv\",12.0,1.0,15.0,1.79285705,null,10.0,false,1,1.0,true,null,false,100.0],[\"'YTTERFORSEN_'\",null,542,545,300.0,135.0,17.0,15.0,0.3,0.0,0.0,0.0,null,null,null,null,null,null,null,false,1,1.0,true,null,false,100.0]]}",
+      "orient": "split",
+      "dtype": {
+        "name": "object",
+        "std_type": "object",
+        "hv_bus": "uint32",
+        "lv_bus": "uint32",
+        "sn_mva": "float64",
+        "vn_hv_kv": "float64",
+        "vn_lv_kv": "float64",
+        "vk_percent": "float64",
+        "vkr_percent": "float64",
+        "pfe_kw": "float64",
+        "i0_percent": "float64",
+        "shift_degree": "float64",
+        "tap_side": "object",
+        "tap_neutral": "float64",
+        "tap_min": "float64",
+        "tap_max": "float64",
+        "tap_step_percent": "float64",
+        "tap_step_degree": "float64",
+        "tap_pos": "float64",
+        "tap_phase_shifter": "bool",
+        "parallel": "uint32",
+        "df": "float64",
+        "in_service": "bool",
+        "pt_percent": "float64",
+        "oltc": "object",
+        "max_loading_percent": "float64"
+      }
+    },
+    "trafo3w": {
+      "_module": "pandas.core.frame",
+      "_class": "DataFrame",
+      "_object": "{\"columns\":[\"name\",\"std_type\",\"hv_bus\",\"mv_bus\",\"lv_bus\",\"sn_hv_mva\",\"sn_mv_mva\",\"sn_lv_mva\",\"vn_hv_kv\",\"vn_mv_kv\",\"vn_lv_kv\",\"vk_hv_percent\",\"vk_mv_percent\",\"vk_lv_percent\",\"vkr_hv_percent\",\"vkr_mv_percent\",\"vkr_lv_percent\",\"pfe_kw\",\"i0_percent\",\"shift_mv_degree\",\"shift_lv_degree\",\"tap_side\",\"tap_neutral\",\"tap_min\",\"tap_max\",\"tap_step_percent\",\"tap_step_degree\",\"tap_pos\",\"tap_at_star_point\",\"in_service\"],\"index\":[],\"data\":[]}",
+      "orient": "split",
+      "dtype": {
+        "name": "object",
+        "std_type": "object",
+        "hv_bus": "uint32",
+        "mv_bus": "uint32",
+        "lv_bus": "uint32",
+        "sn_hv_mva": "float64",
+        "sn_mv_mva": "float64",
+        "sn_lv_mva": "float64",
+        "vn_hv_kv": "float64",
+        "vn_mv_kv": "float64",
+        "vn_lv_kv": "float64",
+        "vk_hv_percent": "float64",
+        "vk_mv_percent": "float64",
+        "vk_lv_percent": "float64",
+        "vkr_hv_percent": "float64",
+        "vkr_mv_percent": "float64",
+        "vkr_lv_percent": "float64",
+        "pfe_kw": "float64",
+        "i0_percent": "float64",
+        "shift_mv_degree": "float64",
+        "shift_lv_degree": "float64",
+        "tap_side": "object",
+        "tap_neutral": "int32",
+        "tap_min": "int32",
+        "tap_max": "int32",
+        "tap_step_percent": "float64",
+        "tap_step_degree": "float64",
+        "tap_pos": "int32",
+        "tap_at_star_point": "bool",
+        "in_service": "bool"
+      }
+    },
+    "impedance": {
+      "_module": "pandas.core.frame",
+      "_class": "DataFrame",
+      "_object": "{\"columns\":[\"name\",\"from_bus\",\"to_bus\",\"rft_pu\",\"xft_pu\",\"rtf_pu\",\"xtf_pu\",\"sn_mva\",\"in_service\"],\"index\":[],\"data\":[]}",
+      "orient": "split",
+      "dtype": {
+        "name": "object",
+        "from_bus": "uint32",
+        "to_bus": "uint32",
+        "rft_pu": "float64",
+        "xft_pu": "float64",
+        "rtf_pu": "float64",
+        "xtf_pu": "float64",
+        "sn_mva": "float64",
+        "in_service": "bool"
+      }
+    },
+    "dcline": {
+      "_module": "pandas.core.frame",
+      "_class": "DataFrame",
+      "_object": "{\"columns\":[\"name\",\"from_bus\",\"to_bus\",\"p_mw\",\"loss_percent\",\"loss_mw\",\"vm_from_pu\",\"vm_to_pu\",\"max_p_mw\",\"min_q_from_mvar\",\"min_q_to_mvar\",\"max_q_from_mvar\",\"max_q_to_mvar\",\"in_service\"],\"index\":[],\"data\":[]}",
+      "orient": "split",
+      "dtype": {
+        "name": "object",
+        "from_bus": "uint32",
+        "to_bus": "uint32",
+        "p_mw": "float64",
+        "loss_percent": "float64",
+        "loss_mw": "float64",
+        "vm_from_pu": "float64",
+        "vm_to_pu": "float64",
+        "max_p_mw": "float64",
+        "min_q_from_mvar": "float64",
+        "min_q_to_mvar": "float64",
+        "max_q_from_mvar": "float64",
+        "max_q_to_mvar": "float64",
+        "in_service": "bool"
+      }
+    },
+    "ward": {
+      "_module": "pandas.core.frame",
+      "_class": "DataFrame",
+      "_object": "{\"columns\":[\"name\",\"bus\",\"ps_mw\",\"qs_mvar\",\"qz_mvar\",\"pz_mw\",\"in_service\"],\"index\":[],\"data\":[]}",
+      "orient": "split",
+      "dtype": {
+        "name": "object",
+        "bus": "uint32",
+        "ps_mw": "float64",
+        "qs_mvar": "float64",
+        "qz_mvar": "float64",
+        "pz_mw": "float64",
+        "in_service": "bool"
+      }
+    },
+    "xward": {
+      "_module": "pandas.core.frame",
+      "_class": "DataFrame",
+      "_object": "{\"columns\":[\"name\",\"bus\",\"ps_mw\",\"qs_mvar\",\"qz_mvar\",\"pz_mw\",\"r_ohm\",\"x_ohm\",\"vm_pu\",\"in_service\"],\"index\":[],\"data\":[]}",
+      "orient": "split",
+      "dtype": {
+        "name": "object",
+        "bus": "uint32",
+        "ps_mw": "float64",
+        "qs_mvar": "float64",
+        "qz_mvar": "float64",
+        "pz_mw": "float64",
+        "r_ohm": "float64",
+        "x_ohm": "float64",
+        "vm_pu": "float64",
+        "in_service": "bool"
+      }
+    },
+    "measurement": {
+      "_module": "pandas.core.frame",
+      "_class": "DataFrame",
+      "_object": "{\"columns\":[\"name\",\"measurement_type\",\"element_type\",\"element\",\"value\",\"std_dev\",\"side\"],\"index\":[],\"data\":[]}",
+      "orient": "split",
+      "dtype": {
+        "name": "object",
+        "measurement_type": "object",
+        "element_type": "object",
+        "element": "uint32",
+        "value": "float64",
+        "std_dev": "float64",
+        "side": "object"
+      }
+    },
+    "pwl_cost": {
+      "_module": "pandas.core.frame",
+      "_class": "DataFrame",
+      "_object": "{\"columns\":[\"power_type\",\"element\",\"et\",\"points\"],\"index\":[],\"data\":[]}",
+      "orient": "split",
+      "dtype": {
+        "power_type": "object",
+        "element": "uint32",
+        "et": "object",
+        "points": "object"
+      }
+    },
+    "poly_cost": {
+      "_module": "pandas.core.frame",
+      "_class": "DataFrame",
+      "_object": "{\"columns\":[\"element\",\"et\",\"cp0_eur\",\"cp1_eur_per_mw\",\"cp2_eur_per_mw2\",\"cq0_eur\",\"cq1_eur_per_mvar\",\"cq2_eur_per_mvar2\"],\"index\":[],\"data\":[]}",
+      "orient": "split",
+      "dtype": {
+        "element": "uint32",
+        "et": "object",
+        "cp0_eur": "float64",
+        "cp1_eur_per_mw": "float64",
+        "cp2_eur_per_mw2": "float64",
+        "cq0_eur": "float64",
+        "cq1_eur_per_mvar": "float64",
+        "cq2_eur_per_mvar2": "float64"
+      }
+    },
+    "controller": {
+      "_module": "pandas.core.frame",
+      "_class": "DataFrame",
+      "_object": "{\"columns\":[\"object\",\"in_service\",\"order\",\"level\",\"initial_run\",\"recycle\"],\"index\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37],\"data\":[[{\"_module\":\"capacitymap.controllers.discrete_shunt_controller\",\"_class\":\"DiscreteShuntControl\",\"_object\":\"{\\\"matching_params\\\": {}, \\\"index\\\": 0, \\\"sid\\\": 0, \\\"bid\\\": 13, \\\"element_in_service\\\": \\\"True\\\", \\\"controlled_bus\\\": 13, \\\"tap_min\\\": 0, \\\"tap_max\\\": 2, \\\"init_step\\\": 0, \\\"tap_pos\\\": 0, \\\"tol\\\": 0, \\\"vm_lower_pu\\\": 1.00312, \\\"vm_upper_pu\\\": 1.03437, \\\"steps\\\": [0, -100.0, -200.0], \\\"tested_steps\\\": []}\"},false,0.0,0,true,true],[{\"_module\":\"capacitymap.controllers.discrete_shunt_controller\",\"_class\":\"DiscreteShuntControl\",\"_object\":\"{\\\"matching_params\\\": {}, \\\"index\\\": 1, \\\"sid\\\": 1, \\\"bid\\\": 61, \\\"element_in_service\\\": \\\"True\\\", \\\"controlled_bus\\\": 61, \\\"tap_min\\\": 0, \\\"tap_max\\\": 2, \\\"init_step\\\": 1, \\\"tap_pos\\\": 1, \\\"tol\\\": 1, \\\"vm_lower_pu\\\": 1.00312, \\\"vm_upper_pu\\\": 1.03437, \\\"steps\\\": [100.0, 0, -100.0], \\\"tested_steps\\\": []}\"},false,0.0,0,true,true],[{\"_module\":\"capacitymap.controllers.discrete_shunt_controller\",\"_class\":\"DiscreteShuntControl\",\"_object\":\"{\\\"matching_params\\\": {}, \\\"index\\\": 2, \\\"sid\\\": 2, \\\"bid\\\": 71, \\\"element_in_service\\\": \\\"True\\\", \\\"controlled_bus\\\": 71, \\\"tap_min\\\": 0, \\\"tap_max\\\": 2, \\\"init_step\\\": 1, \\\"tap_pos\\\": 1, \\\"tol\\\": 1, \\\"vm_lower_pu\\\": 1.00312, \\\"vm_upper_pu\\\": 1.03437, \\\"steps\\\": [200.0, 0, -100.0], \\\"tested_steps\\\": []}\"},false,0.0,0,true,true],[{\"_module\":\"capacitymap.controllers.discrete_shunt_controller\",\"_class\":\"DiscreteShuntControl\",\"_object\":\"{\\\"matching_params\\\": {}, \\\"index\\\": 3, \\\"sid\\\": 3, \\\"bid\\\": 131, \\\"element_in_service\\\": \\\"True\\\", \\\"controlled_bus\\\": 131, \\\"tap_min\\\": 0, \\\"tap_max\\\": 2, \\\"init_step\\\": 0, \\\"tap_pos\\\": 0, \\\"tol\\\": 0, \\\"vm_lower_pu\\\": 1.00312, \\\"vm_upper_pu\\\": 1.03437, \\\"steps\\\": [0, -100.0, -250.0], \\\"tested_steps\\\": []}\"},false,0.0,0,true,true],[{\"_module\":\"capacitymap.controllers.discrete_shunt_controller\",\"_class\":\"DiscreteShuntControl\",\"_object\":\"{\\\"matching_params\\\": {}, \\\"index\\\": 4, \\\"sid\\\": 4, \\\"bid\\\": 141, \\\"element_in_service\\\": \\\"True\\\", \\\"controlled_bus\\\": 141, \\\"tap_min\\\": 0, \\\"tap_max\\\": 1, \\\"init_step\\\": 0, \\\"tap_pos\\\": 0, \\\"tol\\\": 0, \\\"vm_lower_pu\\\": 0.95, \\\"vm_upper_pu\\\": 1.05, \\\"steps\\\": [6.05, 0], \\\"tested_steps\\\": []}\"},true,0.0,0,true,true],[{\"_module\":\"capacitymap.controllers.discrete_shunt_controller\",\"_class\":\"DiscreteShuntControl\",\"_object\":\"{\\\"matching_params\\\": {}, \\\"index\\\": 5, \\\"sid\\\": 5, \\\"bid\\\": 151, \\\"element_in_service\\\": \\\"True\\\", \\\"controlled_bus\\\": 151, \\\"tap_min\\\": 0, \\\"tap_max\\\": 4, \\\"init_step\\\": 4, \\\"tap_pos\\\": 4, \\\"tol\\\": 4, \\\"vm_lower_pu\\\": 1.00312, \\\"vm_upper_pu\\\": 1.03437, \\\"steps\\\": [400.0, 0, -150.0, -300.0, -400.0], \\\"tested_steps\\\": []}\"},true,0.0,0,true,true],[{\"_module\":\"capacitymap.controllers.discrete_shunt_controller\",\"_class\":\"DiscreteShuntControl\",\"_object\":\"{\\\"matching_params\\\": {}, \\\"index\\\": 6, \\\"sid\\\": 6, \\\"bid\\\": 201, \\\"element_in_service\\\": \\\"True\\\", \\\"controlled_bus\\\": 201, \\\"tap_min\\\": 0, \\\"tap_max\\\": 3, \\\"init_step\\\": 0, \\\"tap_pos\\\": 0, \\\"tol\\\": 0, \\\"vm_lower_pu\\\": 1.00312, \\\"vm_upper_pu\\\": 1.03437, \\\"steps\\\": [0, -100.0, -250.0, -350.0], \\\"tested_steps\\\": []}\"},false,0.0,0,true,true],[{\"_module\":\"capacitymap.controllers.discrete_shunt_controller\",\"_class\":\"DiscreteShuntControl\",\"_object\":\"{\\\"matching_params\\\": {}, \\\"index\\\": 7, \\\"sid\\\": 7, \\\"bid\\\": 251, \\\"element_in_service\\\": \\\"True\\\", \\\"controlled_bus\\\": 251, \\\"tap_min\\\": 0, \\\"tap_max\\\": 1, \\\"init_step\\\": 0, \\\"tap_pos\\\": 0, \\\"tol\\\": 0, \\\"vm_lower_pu\\\": 1.00312, \\\"vm_upper_pu\\\": 1.03437, \\\"steps\\\": [100.0, 0], \\\"tested_steps\\\": []}\"},true,0.0,0,true,true],[{\"_module\":\"capacitymap.controllers.discrete_shunt_controller\",\"_class\":\"DiscreteShuntControl\",\"_object\":\"{\\\"matching_params\\\": {}, \\\"index\\\": 8, \\\"sid\\\": 8, \\\"bid\\\": 271, \\\"element_in_service\\\": \\\"True\\\", \\\"controlled_bus\\\": 271, \\\"tap_min\\\": 0, \\\"tap_max\\\": 2, \\\"init_step\\\": 1, \\\"tap_pos\\\": 1, \\\"tol\\\": 1, \\\"vm_lower_pu\\\": 1.00312, \\\"vm_upper_pu\\\": 1.03437, \\\"steps\\\": [0, -150.0, -250.0], \\\"tested_steps\\\": []}\"},true,0.0,0,true,true],[{\"_module\":\"capacitymap.controllers.discrete_shunt_controller\",\"_class\":\"DiscreteShuntControl\",\"_object\":\"{\\\"matching_params\\\": {}, \\\"index\\\": 9, \\\"sid\\\": 9, \\\"bid\\\": 291, \\\"element_in_service\\\": \\\"True\\\", \\\"controlled_bus\\\": 291, \\\"tap_min\\\": 0, \\\"tap_max\\\": 3, \\\"init_step\\\": 0, \\\"tap_pos\\\": 0, \\\"tol\\\": 0, \\\"vm_lower_pu\\\": 1.00312, \\\"vm_upper_pu\\\": 1.03437, \\\"steps\\\": [0, -100.0, -200.0, -300.0], \\\"tested_steps\\\": []}\"},false,0.0,0,true,true],[{\"_module\":\"capacitymap.controllers.discrete_shunt_controller\",\"_class\":\"DiscreteShuntControl\",\"_object\":\"{\\\"matching_params\\\": {}, \\\"index\\\": 10, \\\"sid\\\": 10, \\\"bid\\\": 292, \\\"element_in_service\\\": \\\"True\\\", \\\"controlled_bus\\\": 292, \\\"tap_min\\\": 0, \\\"tap_max\\\": 1, \\\"init_step\\\": 0, \\\"tap_pos\\\": 0, \\\"tol\\\": 0, \\\"vm_lower_pu\\\": 0.9220200000000001, \\\"vm_upper_pu\\\": 0.9942799999999999, \\\"steps\\\": [215.68, 0], \\\"tested_steps\\\": []}\"},true,0.0,0,true,true],[{\"_module\":\"capacitymap.controllers.discrete_shunt_controller\",\"_class\":\"DiscreteShuntControl\",\"_object\":\"{\\\"matching_params\\\": {}, \\\"index\\\": 11, \\\"sid\\\": 11, \\\"bid\\\": 311, \\\"element_in_service\\\": \\\"True\\\", \\\"controlled_bus\\\": 311, \\\"tap_min\\\": 0, \\\"tap_max\\\": 1, \\\"init_step\\\": 0, \\\"tap_pos\\\": 0, \\\"tol\\\": 0, \\\"vm_lower_pu\\\": 0.95, \\\"vm_upper_pu\\\": 1.05, \\\"steps\\\": [5.0, 0], \\\"tested_steps\\\": []}\"},true,0.0,0,true,true],[{\"_module\":\"capacitymap.controllers.discrete_shunt_controller\",\"_class\":\"DiscreteShuntControl\",\"_object\":\"{\\\"matching_params\\\": {}, \\\"index\\\": 12, \\\"sid\\\": 12, \\\"bid\\\": 312, \\\"element_in_service\\\": \\\"True\\\", \\\"controlled_bus\\\": 312, \\\"tap_min\\\": 0, \\\"tap_max\\\": 1, \\\"init_step\\\": 0, \\\"tap_pos\\\": 0, \\\"tol\\\": 0, \\\"vm_lower_pu\\\": 0.8979299999999999, \\\"vm_upper_pu\\\": 0.9797799999999999, \\\"steps\\\": [75.488, 0], \\\"tested_steps\\\": []}\"},true,0.0,0,true,true],[{\"_module\":\"capacitymap.controllers.discrete_shunt_controller\",\"_class\":\"DiscreteShuntControl\",\"_object\":\"{\\\"matching_params\\\": {}, \\\"index\\\": 13, \\\"sid\\\": 13, \\\"bid\\\": 331, \\\"element_in_service\\\": \\\"True\\\", \\\"controlled_bus\\\": 331, \\\"tap_min\\\": 0, \\\"tap_max\\\": 3, \\\"init_step\\\": 1, \\\"tap_pos\\\": 1, \\\"tol\\\": 1, \\\"vm_lower_pu\\\": 1.00312, \\\"vm_upper_pu\\\": 1.03437, \\\"steps\\\": [0, -100.0, -250.0, -350.0], \\\"tested_steps\\\": []}\"},true,0.0,0,true,true],[{\"_module\":\"capacitymap.controllers.discrete_shunt_controller\",\"_class\":\"DiscreteShuntControl\",\"_object\":\"{\\\"matching_params\\\": {}, \\\"index\\\": 14, \\\"sid\\\": 14, \\\"bid\\\": 383, \\\"element_in_service\\\": \\\"True\\\", \\\"controlled_bus\\\": 383, \\\"tap_min\\\": 0, \\\"tap_max\\\": 3, \\\"init_step\\\": 1, \\\"tap_pos\\\": 1, \\\"tol\\\": 1, \\\"vm_lower_pu\\\": 1.00312, \\\"vm_upper_pu\\\": 1.03437, \\\"steps\\\": [0, -100.0, -200.0, -350.0], \\\"tested_steps\\\": []}\"},true,0.0,0,true,true],[{\"_module\":\"capacitymap.controllers.discrete_shunt_controller\",\"_class\":\"DiscreteShuntControl\",\"_object\":\"{\\\"matching_params\\\": {}, \\\"index\\\": 15, \\\"sid\\\": 15, \\\"bid\\\": 401, \\\"element_in_service\\\": \\\"True\\\", \\\"controlled_bus\\\": 401, \\\"tap_min\\\": 0, \\\"tap_max\\\": 1, \\\"init_step\\\": 0, \\\"tap_pos\\\": 0, \\\"tol\\\": 0, \\\"vm_lower_pu\\\": 0.9945799999999999, \\\"vm_upper_pu\\\": 1.09553, \\\"steps\\\": [53.92, 0], \\\"tested_steps\\\": []}\"},true,0.0,0,true,true],[{\"_module\":\"capacitymap.controllers.discrete_shunt_controller\",\"_class\":\"DiscreteShuntControl\",\"_object\":\"{\\\"matching_params\\\": {}, \\\"index\\\": 16, \\\"sid\\\": 16, \\\"bid\\\": 402, \\\"element_in_service\\\": \\\"True\\\", \\\"controlled_bus\\\": 402, \\\"tap_min\\\": 0, \\\"tap_max\\\": 2, \\\"init_step\\\": 0, \\\"tap_pos\\\": 0, \\\"tol\\\": 0, \\\"vm_lower_pu\\\": 1.00312, \\\"vm_upper_pu\\\": 1.03437, \\\"steps\\\": [0, -100.0, -200.0], \\\"tested_steps\\\": []}\"},false,0.0,0,true,true],[{\"_module\":\"capacitymap.controllers.discrete_shunt_controller\",\"_class\":\"DiscreteShuntControl\",\"_object\":\"{\\\"matching_params\\\": {}, \\\"index\\\": 17, \\\"sid\\\": 17, \\\"bid\\\": 422, \\\"element_in_service\\\": \\\"True\\\", \\\"controlled_bus\\\": 422, \\\"tap_min\\\": 0, \\\"tap_max\\\": 2, \\\"init_step\\\": 2, \\\"tap_pos\\\": 2, \\\"tol\\\": 2, \\\"vm_lower_pu\\\": 1.00312, \\\"vm_upper_pu\\\": 1.03437, \\\"steps\\\": [0, -100.0, -200.0], \\\"tested_steps\\\": []}\"},true,0.0,0,true,true],[{\"_module\":\"capacitymap.controllers.discrete_shunt_controller\",\"_class\":\"DiscreteShuntControl\",\"_object\":\"{\\\"matching_params\\\": {}, \\\"index\\\": 18, \\\"sid\\\": 18, \\\"bid\\\": 441, \\\"element_in_service\\\": \\\"True\\\", \\\"controlled_bus\\\": 441, \\\"tap_min\\\": 0, \\\"tap_max\\\": 1, \\\"init_step\\\": 0, \\\"tap_pos\\\": 0, \\\"tol\\\": 0, \\\"vm_lower_pu\\\": 0.9172299999999999, \\\"vm_upper_pu\\\": 0.9990700000000001, \\\"steps\\\": [215.68, 0], \\\"tested_steps\\\": []}\"},true,0.0,0,true,true],[{\"_module\":\"capacitymap.controllers.discrete_shunt_controller\",\"_class\":\"DiscreteShuntControl\",\"_object\":\"{\\\"matching_params\\\": {}, \\\"index\\\": 19, \\\"sid\\\": 19, \\\"bid\\\": 442, \\\"element_in_service\\\": \\\"True\\\", \\\"controlled_bus\\\": 442, \\\"tap_min\\\": 0, \\\"tap_max\\\": 1, \\\"init_step\\\": 0, \\\"tap_pos\\\": 0, \\\"tol\\\": 0, \\\"vm_lower_pu\\\": 0.95, \\\"vm_upper_pu\\\": 1.05, \\\"steps\\\": [6.05, 0], \\\"tested_steps\\\": []}\"},true,0.0,0,true,true],[{\"_module\":\"capacitymap.controllers.discrete_shunt_controller\",\"_class\":\"DiscreteShuntControl\",\"_object\":\"{\\\"matching_params\\\": {}, \\\"index\\\": 20, \\\"sid\\\": 20, \\\"bid\\\": 444, \\\"element_in_service\\\": \\\"True\\\", \\\"controlled_bus\\\": 444, \\\"tap_min\\\": 0, \\\"tap_max\\\": 2, \\\"init_step\\\": 0, \\\"tap_pos\\\": 0, \\\"tol\\\": 0, \\\"vm_lower_pu\\\": 1.00312, \\\"vm_upper_pu\\\": 1.03437, \\\"steps\\\": [0, -150.0, -250.0], \\\"tested_steps\\\": []}\"},false,0.0,0,true,true],[{\"_module\":\"capacitymap.controllers.discrete_shunt_controller\",\"_class\":\"DiscreteShuntControl\",\"_object\":\"{\\\"matching_params\\\": {}, \\\"index\\\": 21, \\\"sid\\\": 21, \\\"bid\\\": 451, \\\"element_in_service\\\": \\\"True\\\", \\\"controlled_bus\\\": 451, \\\"tap_min\\\": 0, \\\"tap_max\\\": 3, \\\"init_step\\\": 0, \\\"tap_pos\\\": 0, \\\"tol\\\": 0, \\\"vm_lower_pu\\\": 1.00312, \\\"vm_upper_pu\\\": 1.03437, \\\"steps\\\": [0, -100.0, -250.0, -350.0], \\\"tested_steps\\\": []}\"},true,0.0,0,true,true],[{\"_module\":\"capacitymap.controllers.discrete_shunt_controller\",\"_class\":\"DiscreteShuntControl\",\"_object\":\"{\\\"matching_params\\\": {}, \\\"index\\\": 22, \\\"sid\\\": 22, \\\"bid\\\": 501, \\\"element_in_service\\\": \\\"True\\\", \\\"controlled_bus\\\": 501, \\\"tap_min\\\": 0, \\\"tap_max\\\": 1, \\\"init_step\\\": 0, \\\"tap_pos\\\": 0, \\\"tol\\\": 0, \\\"vm_lower_pu\\\": 1.00312, \\\"vm_upper_pu\\\": 1.03437, \\\"steps\\\": [200.0, 0], \\\"tested_steps\\\": []}\"},true,0.0,0,true,true],[{\"_module\":\"capacitymap.controllers.discrete_shunt_controller\",\"_class\":\"DiscreteShuntControl\",\"_object\":\"{\\\"matching_params\\\": {}, \\\"index\\\": 23, \\\"sid\\\": 23, \\\"bid\\\": 541, \\\"element_in_service\\\": \\\"True\\\", \\\"controlled_bus\\\": 541, \\\"tap_min\\\": 0, \\\"tap_max\\\": 1, \\\"init_step\\\": 0, \\\"tap_pos\\\": 0, \\\"tol\\\": 0, \\\"vm_lower_pu\\\": 0.95, \\\"vm_upper_pu\\\": 1.05, \\\"steps\\\": [5.0, 0], \\\"tested_steps\\\": []}\"},true,0.0,0,true,true],[{\"_module\":\"capacitymap.controllers.discrete_shunt_controller\",\"_class\":\"DiscreteShuntControl\",\"_object\":\"{\\\"matching_params\\\": {}, \\\"index\\\": 24, \\\"sid\\\": 24, \\\"bid\\\": 542, \\\"element_in_service\\\": \\\"True\\\", \\\"controlled_bus\\\": 542, \\\"tap_min\\\": 0, \\\"tap_max\\\": 1, \\\"init_step\\\": 0, \\\"tap_pos\\\": 0, \\\"tol\\\": 0, \\\"vm_lower_pu\\\": 0.9172299999999999, \\\"vm_upper_pu\\\": 0.9990700000000001, \\\"steps\\\": [107.84, 0], \\\"tested_steps\\\": []}\"},true,0.0,0,true,true],[{\"_module\":\"capacitymap.controllers.discrete_shunt_controller\",\"_class\":\"DiscreteShuntControl\",\"_object\":\"{\\\"matching_params\\\": {}, \\\"index\\\": 25, \\\"sid\\\": 25, \\\"bid\\\": 71, \\\"element_in_service\\\": \\\"True\\\", \\\"controlled_bus\\\": 71, \\\"tap_min\\\": 0, \\\"tap_max\\\": 2, \\\"init_step\\\": 0, \\\"tap_pos\\\": 0, \\\"tol\\\": 0, \\\"vm_lower_pu\\\": 1.025, \\\"vm_upper_pu\\\": 1.025, \\\"steps\\\": [200.0, 0, -200.0], \\\"tested_steps\\\": []}\"},true,0.0,0,true,true],[{\"_module\":\"capacitymap.controllers.discrete_shunt_controller\",\"_class\":\"DiscreteShuntControl\",\"_object\":\"{\\\"matching_params\\\": {}, \\\"index\\\": 26, \\\"sid\\\": 26, \\\"bid\\\": 331, \\\"element_in_service\\\": \\\"True\\\", \\\"controlled_bus\\\": 331, \\\"tap_min\\\": 0, \\\"tap_max\\\": 2, \\\"init_step\\\": 0, \\\"tap_pos\\\": 0, \\\"tol\\\": 0, \\\"vm_lower_pu\\\": 1.025, \\\"vm_upper_pu\\\": 1.025, \\\"steps\\\": [200.0, 0, -200.0], \\\"tested_steps\\\": []}\"},true,0.0,0,true,true],[{\"_module\":\"capacitymap.controllers.discrete_trafo_controller\",\"_class\":\"DiscreteTapControl\",\"_object\":\"{\\\"matching_params\\\": {\\\"tid\\\": 14, \\\"trafotype\\\": \\\"2W\\\"}, \\\"index\\\": 27, \\\"tid\\\": 14, \\\"trafotype\\\": \\\"2W\\\", \\\"trafotable\\\": \\\"trafo\\\", \\\"element_in_service\\\": \\\"True\\\", \\\"side\\\": \\\"lv\\\", \\\"controlled_bus\\\": 141, \\\"tap_min\\\": 1.0, \\\"tap_max\\\": 25.0, \\\"tap_step_percent\\\": 1.24999988, \\\"tap_step_degree\\\": NaN, \\\"tap_sign\\\": 1, \\\"tap_pos\\\": 12.0, \\\"tol\\\": 0.001, \\\"tap_side_coeff\\\": -1, \\\"vm_lower_pu\\\": 0.9875, \\\"vm_upper_pu\\\": 1.0125, \\\"vm_delta_pu\\\": 0.0072499994, \\\"_vm_set_pu\\\": null, \\\"init_pos\\\": 12.0}\"},true,0.0,0,true,{\"trafo\":true,\"gen\":false,\"bus_pq\":false}],[{\"_module\":\"capacitymap.controllers.discrete_trafo_controller\",\"_class\":\"DiscreteTapControl\",\"_object\":\"{\\\"matching_params\\\": {\\\"tid\\\": 21, \\\"trafotype\\\": \\\"2W\\\"}, \\\"index\\\": 28, \\\"tid\\\": 21, \\\"trafotype\\\": \\\"2W\\\", \\\"trafotable\\\": \\\"trafo\\\", \\\"element_in_service\\\": \\\"True\\\", \\\"side\\\": \\\"lv\\\", \\\"controlled_bus\\\": 241, \\\"tap_min\\\": 1.0, \\\"tap_max\\\": 15.0, \\\"tap_step_percent\\\": 1.24999964, \\\"tap_step_degree\\\": NaN, \\\"tap_sign\\\": 1, \\\"tap_pos\\\": 8.0, \\\"tol\\\": 0.001, \\\"tap_side_coeff\\\": -1, \\\"vm_lower_pu\\\": 0.9875, \\\"vm_upper_pu\\\": 1.0125, \\\"vm_delta_pu\\\": 0.0072499982, \\\"_vm_set_pu\\\": null, \\\"init_pos\\\": 8.0}\"},true,0.0,0,true,{\"trafo\":true,\"gen\":false,\"bus_pq\":false}],[{\"_module\":\"capacitymap.controllers.discrete_trafo_controller\",\"_class\":\"DiscreteTapControl\",\"_object\":\"{\\\"matching_params\\\": {\\\"tid\\\": 25, \\\"trafotype\\\": \\\"2W\\\"}, \\\"index\\\": 29, \\\"tid\\\": 25, \\\"trafotype\\\": \\\"2W\\\", \\\"trafotable\\\": \\\"trafo\\\", \\\"element_in_service\\\": \\\"True\\\", \\\"side\\\": \\\"lv\\\", \\\"controlled_bus\\\": 292, \\\"tap_min\\\": 1.0, \\\"tap_max\\\": 25.0, \\\"tap_step_percent\\\": 1.00000012, \\\"tap_step_degree\\\": NaN, \\\"tap_sign\\\": 1, \\\"tap_pos\\\": 7.0, \\\"tol\\\": 0.001, \\\"tap_side_coeff\\\": -1, \\\"vm_lower_pu\\\": 0.94926, \\\"vm_upper_pu\\\": 0.96926, \\\"vm_delta_pu\\\": 0.0060000005999999995, \\\"_vm_set_pu\\\": null, \\\"init_pos\\\": 7.0}\"},true,0.0,0,true,{\"trafo\":true,\"gen\":false,\"bus_pq\":false}],[{\"_module\":\"capacitymap.controllers.discrete_trafo_controller\",\"_class\":\"DiscreteTapControl\",\"_object\":\"{\\\"matching_params\\\": {\\\"tid\\\": 26, \\\"trafotype\\\": \\\"2W\\\"}, \\\"index\\\": 30, \\\"tid\\\": 26, \\\"trafotype\\\": \\\"2W\\\", \\\"trafotable\\\": \\\"trafo\\\", \\\"element_in_service\\\": \\\"True\\\", \\\"side\\\": \\\"lv\\\", \\\"controlled_bus\\\": 292, \\\"tap_min\\\": 1.0, \\\"tap_max\\\": 25.0, \\\"tap_step_percent\\\": 1.00000012, \\\"tap_step_degree\\\": NaN, \\\"tap_sign\\\": 1, \\\"tap_pos\\\": 7.0, \\\"tol\\\": 0.001, \\\"tap_side_coeff\\\": -1, \\\"vm_lower_pu\\\": 0.94926, \\\"vm_upper_pu\\\": 0.96926, \\\"vm_delta_pu\\\": 0.0060000005999999995, \\\"_vm_set_pu\\\": null, \\\"init_pos\\\": 7.0}\"},true,0.0,0,true,{\"trafo\":true,\"gen\":false,\"bus_pq\":false}],[{\"_module\":\"capacitymap.controllers.discrete_trafo_controller\",\"_class\":\"DiscreteTapControl\",\"_object\":\"{\\\"matching_params\\\": {\\\"tid\\\": 27, \\\"trafotype\\\": \\\"2W\\\"}, \\\"index\\\": 31, \\\"tid\\\": 27, \\\"trafotype\\\": \\\"2W\\\", \\\"trafotable\\\": \\\"trafo\\\", \\\"element_in_service\\\": \\\"True\\\", \\\"side\\\": \\\"lv\\\", \\\"controlled_bus\\\": 311, \\\"tap_min\\\": 1.0, \\\"tap_max\\\": 15.0, \\\"tap_step_percent\\\": 1.79285705, \\\"tap_step_degree\\\": NaN, \\\"tap_sign\\\": 1, \\\"tap_pos\\\": 8.0, \\\"tol\\\": 0.001, \\\"tap_side_coeff\\\": -1, \\\"vm_lower_pu\\\": 1.01417, \\\"vm_upper_pu\\\": 1.0498299999999998, \\\"vm_delta_pu\\\": 0.00996428525, \\\"_vm_set_pu\\\": null, \\\"init_pos\\\": 8.0}\"},true,0.0,0,true,{\"trafo\":true,\"gen\":false,\"bus_pq\":false}],[{\"_module\":\"capacitymap.controllers.discrete_trafo_controller\",\"_class\":\"DiscreteTapControl\",\"_object\":\"{\\\"matching_params\\\": {\\\"tid\\\": 45, \\\"trafotype\\\": \\\"2W\\\"}, \\\"index\\\": 32, \\\"tid\\\": 45, \\\"trafotype\\\": \\\"2W\\\", \\\"trafotable\\\": \\\"trafo\\\", \\\"element_in_service\\\": \\\"True\\\", \\\"side\\\": \\\"lv\\\", \\\"controlled_bus\\\": 441, \\\"tap_min\\\": 1.0, \\\"tap_max\\\": 25.0, \\\"tap_step_percent\\\": 1.00000012, \\\"tap_step_degree\\\": NaN, \\\"tap_sign\\\": 1, \\\"tap_pos\\\": 7.0, \\\"tol\\\": 0.001, \\\"tap_side_coeff\\\": -1, \\\"vm_lower_pu\\\": 0.95296, \\\"vm_upper_pu\\\": 0.97296, \\\"vm_delta_pu\\\": 0.0060000005999999995, \\\"_vm_set_pu\\\": null, \\\"init_pos\\\": 7.0}\"},true,0.0,0,true,{\"trafo\":true,\"gen\":false,\"bus_pq\":false}],[{\"_module\":\"capacitymap.controllers.discrete_trafo_controller\",\"_class\":\"DiscreteTapControl\",\"_object\":\"{\\\"matching_params\\\": {\\\"tid\\\": 46, \\\"trafotype\\\": \\\"2W\\\"}, \\\"index\\\": 33, \\\"tid\\\": 46, \\\"trafotype\\\": \\\"2W\\\", \\\"trafotable\\\": \\\"trafo\\\", \\\"element_in_service\\\": \\\"True\\\", \\\"side\\\": \\\"hv\\\", \\\"controlled_bus\\\": 442, \\\"tap_min\\\": 1.0, \\\"tap_max\\\": 25.0, \\\"tap_step_percent\\\": 1.24999988, \\\"tap_step_degree\\\": NaN, \\\"tap_sign\\\": 1, \\\"tap_pos\\\": 9.0, \\\"tol\\\": 0.001, \\\"tap_side_coeff\\\": 1, \\\"vm_lower_pu\\\": 0.9875, \\\"vm_upper_pu\\\": 1.0125, \\\"vm_delta_pu\\\": 0.0072499994, \\\"_vm_set_pu\\\": null, \\\"init_pos\\\": 9.0}\"},true,0.0,0,true,{\"trafo\":true,\"gen\":false,\"bus_pq\":false}],[{\"_module\":\"capacitymap.controllers.discrete_trafo_controller\",\"_class\":\"DiscreteTapControl\",\"_object\":\"{\\\"matching_params\\\": {\\\"tid\\\": 47, \\\"trafotype\\\": \\\"2W\\\"}, \\\"index\\\": 34, \\\"tid\\\": 47, \\\"trafotype\\\": \\\"2W\\\", \\\"trafotable\\\": \\\"trafo\\\", \\\"element_in_service\\\": \\\"True\\\", \\\"side\\\": \\\"lv\\\", \\\"controlled_bus\\\": 441, \\\"tap_min\\\": 1.0, \\\"tap_max\\\": 25.0, \\\"tap_step_percent\\\": 1.00000012, \\\"tap_step_degree\\\": NaN, \\\"tap_sign\\\": 1, \\\"tap_pos\\\": 7.0, \\\"tol\\\": 0.001, \\\"tap_side_coeff\\\": -1, \\\"vm_lower_pu\\\": 0.95296, \\\"vm_upper_pu\\\": 0.97296, \\\"vm_delta_pu\\\": 0.0060000005999999995, \\\"_vm_set_pu\\\": null, \\\"init_pos\\\": 7.0}\"},true,0.0,0,true,{\"trafo\":true,\"gen\":false,\"bus_pq\":false}],[{\"_module\":\"capacitymap.controllers.discrete_trafo_controller\",\"_class\":\"DiscreteTapControl\",\"_object\":\"{\\\"matching_params\\\": {\\\"tid\\\": 48, \\\"trafotype\\\": \\\"2W\\\"}, \\\"index\\\": 35, \\\"tid\\\": 48, \\\"trafotype\\\": \\\"2W\\\", \\\"trafotable\\\": \\\"trafo\\\", \\\"element_in_service\\\": \\\"True\\\", \\\"side\\\": \\\"lv\\\", \\\"controlled_bus\\\": 442, \\\"tap_min\\\": 1.0, \\\"tap_max\\\": 25.0, \\\"tap_step_percent\\\": 1.24999988, \\\"tap_step_degree\\\": NaN, \\\"tap_sign\\\": 1, \\\"tap_pos\\\": 10.0, \\\"tol\\\": 0.001, \\\"tap_side_coeff\\\": -1, \\\"vm_lower_pu\\\": 0.9875, \\\"vm_upper_pu\\\": 1.0125, \\\"vm_delta_pu\\\": 0.0072499994, \\\"_vm_set_pu\\\": null, \\\"init_pos\\\": 10.0}\"},true,0.0,0,true,{\"trafo\":true,\"gen\":false,\"bus_pq\":false}],[{\"_module\":\"capacitymap.controllers.discrete_trafo_controller\",\"_class\":\"DiscreteTapControl\",\"_object\":\"{\\\"matching_params\\\": {\\\"tid\\\": 50, \\\"trafotype\\\": \\\"2W\\\"}, \\\"index\\\": 36, \\\"tid\\\": 50, \\\"trafotype\\\": \\\"2W\\\", \\\"trafotable\\\": \\\"trafo\\\", \\\"element_in_service\\\": \\\"True\\\", \\\"side\\\": \\\"lv\\\", \\\"controlled_bus\\\": 521, \\\"tap_min\\\": 1.0, \\\"tap_max\\\": 15.0, \\\"tap_step_percent\\\": 1.24999964, \\\"tap_step_degree\\\": NaN, \\\"tap_sign\\\": 1, \\\"tap_pos\\\": 5.0, \\\"tol\\\": 0.001, \\\"tap_side_coeff\\\": -1, \\\"vm_lower_pu\\\": 0.9875, \\\"vm_upper_pu\\\": 1.0125, \\\"vm_delta_pu\\\": 0.0072499982, \\\"_vm_set_pu\\\": null, \\\"init_pos\\\": 5.0}\"},true,0.0,0,true,{\"trafo\":true,\"gen\":false,\"bus_pq\":false}],[{\"_module\":\"capacitymap.controllers.discrete_trafo_controller\",\"_class\":\"DiscreteTapControl\",\"_object\":\"{\\\"matching_params\\\": {\\\"tid\\\": 51, \\\"trafotype\\\": \\\"2W\\\"}, \\\"index\\\": 37, \\\"tid\\\": 51, \\\"trafotype\\\": \\\"2W\\\", \\\"trafotable\\\": \\\"trafo\\\", \\\"element_in_service\\\": \\\"True\\\", \\\"side\\\": \\\"lv\\\", \\\"controlled_bus\\\": 541, \\\"tap_min\\\": 1.0, \\\"tap_max\\\": 15.0, \\\"tap_step_percent\\\": 1.79285705, \\\"tap_step_degree\\\": NaN, \\\"tap_sign\\\": 1, \\\"tap_pos\\\": 10.0, \\\"tol\\\": 0.001, \\\"tap_side_coeff\\\": -1, \\\"vm_lower_pu\\\": 1.01417, \\\"vm_upper_pu\\\": 1.0498299999999998, \\\"vm_delta_pu\\\": 0.00996428525, \\\"_vm_set_pu\\\": null, \\\"init_pos\\\": 10.0}\"},true,0.0,0,true,{\"trafo\":true,\"gen\":false,\"bus_pq\":false}]]}",
+      "orient": "split",
+      "dtype": {
+        "object": "object",
+        "in_service": "bool",
+        "order": "float64",
+        "level": "object",
+        "initial_run": "bool",
+        "recycle": "object"
+      }
+    },
+    "line_geodata": {
+      "_module": "pandas.core.frame",
+      "_class": "DataFrame",
+      "_object": "{\"columns\":[\"coords\"],\"index\":[],\"data\":[]}",
+      "orient": "split",
+      "dtype": {
+        "coords": "object"
+      }
+    },
+    "bus_geodata": {
+      "_module": "pandas.core.frame",
+      "_class": "DataFrame",
+      "_object": "{\"columns\":[\"x\",\"y\",\"coords\"],\"index\":[11,12,13,14,21,31,41,42,51,61,62,63,71,72,81,82,83,91,101,102,111,121,131,135,136,137,138,141,142,144,145,151,152,161,171,181,191,201,202,203,208,211,221,231,241,242,251,261,271,274,281,283,284,291,292,301,311,312,321,323,331,335,336,337,341,351,361,371,381,382,383,391,393,401,402,409,411,412,421,422,427,428,429,431,432,433,441,442,443,444,451,461,471,481,491,501,511,515,521,522,531,532,541,542,545,551,561,50050],\"data\":[[1.498297909161878,2.283910876806737,null],[2.972934472590607,1.607145152595622,null],[2.334326009109565,1.334423082285332,null],[3.372878201578302,1.247232146419462,null],[-3.239611086279744,-5.384534663904716,null],[2.960942236937216,-9.417866345366296,null],[-0.496260462284224,-0.913172103622598,null],[-1.380315561970363,-0.008566424316253,null],[-0.593584191844958,-11.890004584632447,null],[-1.201869861303053,-2.683757070410744,null],[-2.573342564680541,-2.549515556494574,null],[-2.414752403380826,-3.095828840579039,null],[0.709804728739214,-1.054359928947596,null],[0.075928869218132,-0.498258043784832,null],[3.800390360127515,-2.436991979204799,null],[4.889189830733682,-2.941056421054403,null],[5.018783947391182,-2.32405316520482,null],[-1.265508461049195,-12.75919481401788,null],[-0.500339900954685,-7.300066936832699,null],[-1.711500885685764,-7.69371390504898,null],[3.709823465341582,-11.345309691131146,null],[4.282936762708482,-9.726246254958713,null],[4.685905419008348,2.745653308714112,null],[4.822320613028371,3.928737122594724,null],[5.41187700229516,3.57173127474135,null],[5.920673606802937,2.380168426737046,null],[5.816314215414075,2.983074804700841,null],[0.516169357775931,-5.418457208626764,null],[0.47262814933037,-4.141298156686454,null],[1.529024974118539,-4.284836267730974,null],[-0.609819556074494,-4.394028627612607,null],[3.498083050836384,2.12029153125323,null],[4.502833095023287,1.986879250255229,null],[1.196677215522522,-13.44981905866743,null],[1.463712716332926,-10.912447183117017,null],[0.094371749779346,-12.971721063596819,null],[3.761467758126627,-7.576965665696429,null],[1.987071208753527,-1.337298689901204,null],[2.70660597676208,-1.138951575101424,null],[3.219177921956299,-1.415622868012994,null],[2.834869826592624,-1.699784492440952,null],[3.178957387294416,-6.188106528977546,null],[3.657039728317701,-5.344255003321257,null],[-2.5847562168851,-4.517283012244458,null],[1.81908415210008,-8.461062904141572,null],[0.303594879088799,-8.280441437556284,null],[3.199308248407445,-2.659594924275802,null],[-1.012166805823966,-5.826727904026424,null],[2.261413968471841,-0.004532511388756,null],[3.483503497585027,-0.066249919108469,null],[4.611795387651939,-0.054260810030424,null],[5.811754881159371,0.354574225755744,null],[5.889177022491097,-0.403716143059108,null],[1.111117085938951,-2.108477992446454,null],[1.160541522614731,-3.346870745869901,null],[2.3939385574063,-11.552641662145195,null],[-0.054633133872317,-6.245057516195154,null],[-0.004635416466067,-4.964930403480581,null],[1.417625704496907,4.450327607083809,null],[1.242244321679555,5.602741643014497,null],[-1.11776180722885,-1.725132935028889,null],[-1.986103826495616,-1.395279864249674,null],[-1.843200869245408,-0.876057771152082,null],[-2.07792842003008,-2.050528915043098,null],[2.461855476936436,-10.592188385891415,null],[1.82842381268783,-6.231885302419447,null],[2.14507013133287,-12.69003483771241,null],[2.573288844982053,-4.571793096166671,null],[2.979902763679446,0.028440145610861,null],[0.593233515730475,0.580003383664762,null],[1.444555578417755,0.083142034292516,null],[-0.611488790409731,3.022240691630834,null],[-1.586468898899331,3.748658730409637,null],[0.261550125604229,2.053956058090575,null],[1.410070760284946,1.353813890956718,null],[-0.8048286961209,2.406888457609008,null],[1.665163233322293,-7.321729105748887,null],[3.038227291968686,-7.447131636353986,null],[2.264875448960816,3.590996119916046,null],[2.348976564148162,2.272852315264342,null],[1.814382327599565,3.018516084341913,null],[2.971121248510962,2.999460620705414,null],[3.088654817349919,4.446824461520261,null],[-2.610934908124039,-1.395592487538158,null],[-3.577366888714799,-0.722388886856174,null],[-3.799841150544031,-1.570824040303276,null],[-0.116353721801659,-3.72873168256109,null],[-1.347586744582286,-4.130850791529987,null],[1.043780927470187,-4.038613268715604,null],[-0.110418789653979,-2.485607899358349,null],[1.498938406614484,-0.909671942576719,null],[0.080884600273748,-10.808107409152708,null],[2.366043146444015,-7.362033353244532,null],[-1.771125394807526,-12.089300274804211,null],[0.659448788580363,-11.610698803343666,null],[2.260263789159461,-2.222178713483021,null],[0.888540445810011,3.506322725587768,null],[0.03233810472792,4.388930177728989,null],[1.170817095576574,-9.975252081347971,null],[1.465082722774168,-8.685456213572792,null],[-0.74867750472521,-8.998881982843031,null],[2.678615588719892,-8.922748277368502,null],[1.14706292421953,-6.107772166958664,null],[1.283733192205446,-4.748438072753477,null],[2.446889051501252,-4.957469145397657,null],[-2.379014592972759,-6.073244407602709,null],[3.102103751494611,-10.632273290719057,null],[2.402188457529832,4.661896089964509,null]]}",
+      "orient": "split",
+      "dtype": {
+        "x": "float64",
+        "y": "float64",
+        "coords": "object"
+      }
+    },
+    "version": "2.7.0",
+    "converged": true,
+    "name": "",
+    "f_hz": 50.0,
+    "sn_mva": 100,
+    "std_types": {
+      "line": {
+        "NAYY 4x50 SE": {
+          "c_nf_per_km": 210,
+          "r_ohm_per_km": 0.642,
+          "x_ohm_per_km": 0.083,
+          "max_i_ka": 0.142,
+          "type": "cs",
+          "q_mm2": 50,
+          "alpha": 0.00403
+        },
+        "NAYY 4x120 SE": {
+          "c_nf_per_km": 264,
+          "r_ohm_per_km": 0.225,
+          "x_ohm_per_km": 0.08,
+          "max_i_ka": 0.242,
+          "type": "cs",
+          "q_mm2": 120,
+          "alpha": 0.00403
+        },
+        "NAYY 4x150 SE": {
+          "c_nf_per_km": 261,
+          "r_ohm_per_km": 0.208,
+          "x_ohm_per_km": 0.08,
+          "max_i_ka": 0.27,
+          "type": "cs",
+          "q_mm2": 150,
+          "alpha": 0.00403
+        },
+        "NA2XS2Y 1x95 RM/25 12/20 kV": {
+          "c_nf_per_km": 216,
+          "r_ohm_per_km": 0.313,
+          "x_ohm_per_km": 0.132,
+          "max_i_ka": 0.252,
+          "type": "cs",
+          "q_mm2": 95,
+          "alpha": 0.00403
+        },
+        "NA2XS2Y 1x185 RM/25 12/20 kV": {
+          "c_nf_per_km": 273,
+          "r_ohm_per_km": 0.161,
+          "x_ohm_per_km": 0.117,
+          "max_i_ka": 0.362,
+          "type": "cs",
+          "q_mm2": 185,
+          "alpha": 0.00403
+        },
+        "NA2XS2Y 1x240 RM/25 12/20 kV": {
+          "c_nf_per_km": 304,
+          "r_ohm_per_km": 0.122,
+          "x_ohm_per_km": 0.112,
+          "max_i_ka": 0.421,
+          "type": "cs",
+          "q_mm2": 240,
+          "alpha": 0.00403
+        },
+        "NA2XS2Y 1x95 RM/25 6/10 kV": {
+          "c_nf_per_km": 315,
+          "r_ohm_per_km": 0.313,
+          "x_ohm_per_km": 0.123,
+          "max_i_ka": 0.249,
+          "type": "cs",
+          "q_mm2": 95,
+          "alpha": 0.00403
+        },
+        "NA2XS2Y 1x185 RM/25 6/10 kV": {
+          "c_nf_per_km": 406,
+          "r_ohm_per_km": 0.161,
+          "x_ohm_per_km": 0.11,
+          "max_i_ka": 0.358,
+          "type": "cs",
+          "q_mm2": 185,
+          "alpha": 0.00403
+        },
+        "NA2XS2Y 1x240 RM/25 6/10 kV": {
+          "c_nf_per_km": 456,
+          "r_ohm_per_km": 0.122,
+          "x_ohm_per_km": 0.105,
+          "max_i_ka": 0.416,
+          "type": "cs",
+          "q_mm2": 240,
+          "alpha": 0.00403
+        },
+        "NA2XS2Y 1x150 RM/25 12/20 kV": {
+          "c_nf_per_km": 250,
+          "r_ohm_per_km": 0.206,
+          "x_ohm_per_km": 0.116,
+          "max_i_ka": 0.319,
+          "type": "cs",
+          "q_mm2": 150,
+          "alpha": 0.00403
+        },
+        "NA2XS2Y 1x120 RM/25 12/20 kV": {
+          "c_nf_per_km": 230,
+          "r_ohm_per_km": 0.253,
+          "x_ohm_per_km": 0.119,
+          "max_i_ka": 0.283,
+          "type": "cs",
+          "q_mm2": 120,
+          "alpha": 0.00403
+        },
+        "NA2XS2Y 1x70 RM/25 12/20 kV": {
+          "c_nf_per_km": 190,
+          "r_ohm_per_km": 0.443,
+          "x_ohm_per_km": 0.132,
+          "max_i_ka": 0.22,
+          "type": "cs",
+          "q_mm2": 70,
+          "alpha": 0.00403
+        },
+        "NA2XS2Y 1x150 RM/25 6/10 kV": {
+          "c_nf_per_km": 360,
+          "r_ohm_per_km": 0.206,
+          "x_ohm_per_km": 0.11,
+          "max_i_ka": 0.315,
+          "type": "cs",
+          "q_mm2": 150,
+          "alpha": 0.00403
+        },
+        "NA2XS2Y 1x120 RM/25 6/10 kV": {
+          "c_nf_per_km": 340,
+          "r_ohm_per_km": 0.253,
+          "x_ohm_per_km": 0.113,
+          "max_i_ka": 0.28,
+          "type": "cs",
+          "q_mm2": 120,
+          "alpha": 0.00403
+        },
+        "NA2XS2Y 1x70 RM/25 6/10 kV": {
+          "c_nf_per_km": 280,
+          "r_ohm_per_km": 0.443,
+          "x_ohm_per_km": 0.123,
+          "max_i_ka": 0.217,
+          "type": "cs",
+          "q_mm2": 70,
+          "alpha": 0.00403
+        },
+        "N2XS(FL)2Y 1x120 RM/35 64/110 kV": {
+          "c_nf_per_km": 112,
+          "r_ohm_per_km": 0.153,
+          "x_ohm_per_km": 0.166,
+          "max_i_ka": 0.366,
+          "type": "cs",
+          "q_mm2": 120,
+          "alpha": 0.00393
+        },
+        "N2XS(FL)2Y 1x185 RM/35 64/110 kV": {
+          "c_nf_per_km": 125,
+          "r_ohm_per_km": 0.099,
+          "x_ohm_per_km": 0.156,
+          "max_i_ka": 0.457,
+          "type": "cs",
+          "q_mm2": 185,
+          "alpha": 0.00393
+        },
+        "N2XS(FL)2Y 1x240 RM/35 64/110 kV": {
+          "c_nf_per_km": 135,
+          "r_ohm_per_km": 0.075,
+          "x_ohm_per_km": 0.149,
+          "max_i_ka": 0.526,
+          "type": "cs",
+          "q_mm2": 240,
+          "alpha": 0.00393
+        },
+        "N2XS(FL)2Y 1x300 RM/35 64/110 kV": {
+          "c_nf_per_km": 144,
+          "r_ohm_per_km": 0.06,
+          "x_ohm_per_km": 0.144,
+          "max_i_ka": 0.588,
+          "type": "cs",
+          "q_mm2": 300,
+          "alpha": 0.00393
+        },
+        "15-AL1/3-ST1A 0.4": {
+          "c_nf_per_km": 11,
+          "r_ohm_per_km": 1.8769,
+          "x_ohm_per_km": 0.35,
+          "max_i_ka": 0.105,
+          "type": "ol",
+          "q_mm2": 16,
+          "alpha": 0.00403
+        },
+        "24-AL1/4-ST1A 0.4": {
+          "c_nf_per_km": 11.25,
+          "r_ohm_per_km": 1.2012,
+          "x_ohm_per_km": 0.335,
+          "max_i_ka": 0.14,
+          "type": "ol",
+          "q_mm2": 24,
+          "alpha": 0.00403
+        },
+        "48-AL1/8-ST1A 0.4": {
+          "c_nf_per_km": 12.2,
+          "r_ohm_per_km": 0.5939,
+          "x_ohm_per_km": 0.3,
+          "max_i_ka": 0.21,
+          "type": "ol",
+          "q_mm2": 48,
+          "alpha": 0.00403
+        },
+        "94-AL1/15-ST1A 0.4": {
+          "c_nf_per_km": 13.2,
+          "r_ohm_per_km": 0.306,
+          "x_ohm_per_km": 0.29,
+          "max_i_ka": 0.35,
+          "type": "ol",
+          "q_mm2": 94,
+          "alpha": 0.00403
+        },
+        "34-AL1/6-ST1A 10.0": {
+          "c_nf_per_km": 9.7,
+          "r_ohm_per_km": 0.8342,
+          "x_ohm_per_km": 0.36,
+          "max_i_ka": 0.17,
+          "type": "ol",
+          "q_mm2": 34,
+          "alpha": 0.00403
+        },
+        "48-AL1/8-ST1A 10.0": {
+          "c_nf_per_km": 10.1,
+          "r_ohm_per_km": 0.5939,
+          "x_ohm_per_km": 0.35,
+          "max_i_ka": 0.21,
+          "type": "ol",
+          "q_mm2": 48,
+          "alpha": 0.00403
+        },
+        "70-AL1/11-ST1A 10.0": {
+          "c_nf_per_km": 10.4,
+          "r_ohm_per_km": 0.4132,
+          "x_ohm_per_km": 0.339,
+          "max_i_ka": 0.29,
+          "type": "ol",
+          "q_mm2": 70,
+          "alpha": 0.00403
+        },
+        "94-AL1/15-ST1A 10.0": {
+          "c_nf_per_km": 10.75,
+          "r_ohm_per_km": 0.306,
+          "x_ohm_per_km": 0.33,
+          "max_i_ka": 0.35,
+          "type": "ol",
+          "q_mm2": 94,
+          "alpha": 0.00403
+        },
+        "122-AL1/20-ST1A 10.0": {
+          "c_nf_per_km": 11.1,
+          "r_ohm_per_km": 0.2376,
+          "x_ohm_per_km": 0.323,
+          "max_i_ka": 0.41,
+          "type": "ol",
+          "q_mm2": 122,
+          "alpha": 0.00403
+        },
+        "149-AL1/24-ST1A 10.0": {
+          "c_nf_per_km": 11.25,
+          "r_ohm_per_km": 0.194,
+          "x_ohm_per_km": 0.315,
+          "max_i_ka": 0.47,
+          "type": "ol",
+          "q_mm2": 149,
+          "alpha": 0.00403
+        },
+        "34-AL1/6-ST1A 20.0": {
+          "c_nf_per_km": 9.15,
+          "r_ohm_per_km": 0.8342,
+          "x_ohm_per_km": 0.382,
+          "max_i_ka": 0.17,
+          "type": "ol",
+          "q_mm2": 34,
+          "alpha": 0.00403
+        },
+        "48-AL1/8-ST1A 20.0": {
+          "c_nf_per_km": 9.5,
+          "r_ohm_per_km": 0.5939,
+          "x_ohm_per_km": 0.372,
+          "max_i_ka": 0.21,
+          "type": "ol",
+          "q_mm2": 48,
+          "alpha": 0.00403
+        },
+        "70-AL1/11-ST1A 20.0": {
+          "c_nf_per_km": 9.7,
+          "r_ohm_per_km": 0.4132,
+          "x_ohm_per_km": 0.36,
+          "max_i_ka": 0.29,
+          "type": "ol",
+          "q_mm2": 70,
+          "alpha": 0.00403
+        },
+        "94-AL1/15-ST1A 20.0": {
+          "c_nf_per_km": 10,
+          "r_ohm_per_km": 0.306,
+          "x_ohm_per_km": 0.35,
+          "max_i_ka": 0.35,
+          "type": "ol",
+          "q_mm2": 94,
+          "alpha": 0.00403
+        },
+        "122-AL1/20-ST1A 20.0": {
+          "c_nf_per_km": 10.3,
+          "r_ohm_per_km": 0.2376,
+          "x_ohm_per_km": 0.344,
+          "max_i_ka": 0.41,
+          "type": "ol",
+          "q_mm2": 122,
+          "alpha": 0.00403
+        },
+        "149-AL1/24-ST1A 20.0": {
+          "c_nf_per_km": 10.5,
+          "r_ohm_per_km": 0.194,
+          "x_ohm_per_km": 0.337,
+          "max_i_ka": 0.47,
+          "type": "ol",
+          "q_mm2": 149,
+          "alpha": 0.00403
+        },
+        "184-AL1/30-ST1A 20.0": {
+          "c_nf_per_km": 10.75,
+          "r_ohm_per_km": 0.1571,
+          "x_ohm_per_km": 0.33,
+          "max_i_ka": 0.535,
+          "type": "ol",
+          "q_mm2": 184,
+          "alpha": 0.00403
+        },
+        "243-AL1/39-ST1A 20.0": {
+          "c_nf_per_km": 11,
+          "r_ohm_per_km": 0.1188,
+          "x_ohm_per_km": 0.32,
+          "max_i_ka": 0.645,
+          "type": "ol",
+          "q_mm2": 243,
+          "alpha": 0.00403
+        },
+        "48-AL1/8-ST1A 110.0": {
+          "c_nf_per_km": 8,
+          "r_ohm_per_km": 0.5939,
+          "x_ohm_per_km": 0.46,
+          "max_i_ka": 0.21,
+          "type": "ol",
+          "q_mm2": 48,
+          "alpha": 0.00403
+        },
+        "70-AL1/11-ST1A 110.0": {
+          "c_nf_per_km": 8.4,
+          "r_ohm_per_km": 0.4132,
+          "x_ohm_per_km": 0.45,
+          "max_i_ka": 0.29,
+          "type": "ol",
+          "q_mm2": 70,
+          "alpha": 0.00403
+        },
+        "94-AL1/15-ST1A 110.0": {
+          "c_nf_per_km": 8.65,
+          "r_ohm_per_km": 0.306,
+          "x_ohm_per_km": 0.44,
+          "max_i_ka": 0.35,
+          "type": "ol",
+          "q_mm2": 94,
+          "alpha": 0.00403
+        },
+        "122-AL1/20-ST1A 110.0": {
+          "c_nf_per_km": 8.5,
+          "r_ohm_per_km": 0.2376,
+          "x_ohm_per_km": 0.43,
+          "max_i_ka": 0.41,
+          "type": "ol",
+          "q_mm2": 122,
+          "alpha": 0.00403
+        },
+        "149-AL1/24-ST1A 110.0": {
+          "c_nf_per_km": 8.75,
+          "r_ohm_per_km": 0.194,
+          "x_ohm_per_km": 0.41,
+          "max_i_ka": 0.47,
+          "type": "ol",
+          "q_mm2": 149,
+          "alpha": 0.00403
+        },
+        "184-AL1/30-ST1A 110.0": {
+          "c_nf_per_km": 8.8,
+          "r_ohm_per_km": 0.1571,
+          "x_ohm_per_km": 0.4,
+          "max_i_ka": 0.535,
+          "type": "ol",
+          "q_mm2": 184,
+          "alpha": 0.00403
+        },
+        "243-AL1/39-ST1A 110.0": {
+          "c_nf_per_km": 9,
+          "r_ohm_per_km": 0.1188,
+          "x_ohm_per_km": 0.39,
+          "max_i_ka": 0.645,
+          "type": "ol",
+          "q_mm2": 243,
+          "alpha": 0.00403
+        },
+        "305-AL1/39-ST1A 110.0": {
+          "c_nf_per_km": 9.2,
+          "r_ohm_per_km": 0.0949,
+          "x_ohm_per_km": 0.38,
+          "max_i_ka": 0.74,
+          "type": "ol",
+          "q_mm2": 305,
+          "alpha": 0.00403
+        },
+        "490-AL1/64-ST1A 110.0": {
+          "c_nf_per_km": 9.75,
+          "r_ohm_per_km": 0.059,
+          "x_ohm_per_km": 0.37,
+          "max_i_ka": 0.96,
+          "type": "ol",
+          "q_mm2": 490,
+          "alpha": 0.00403
+        },
+        "679-AL1/86-ST1A 110.0": {
+          "c_nf_per_km": 9.95,
+          "r_ohm_per_km": 0.042,
+          "x_ohm_per_km": 0.36,
+          "max_i_ka": 1.15,
+          "type": "ol",
+          "q_mm2": 679,
+          "alpha": 0.00403
+        },
+        "490-AL1/64-ST1A 220.0": {
+          "c_nf_per_km": 10,
+          "r_ohm_per_km": 0.059,
+          "x_ohm_per_km": 0.285,
+          "max_i_ka": 0.96,
+          "type": "ol",
+          "q_mm2": 490,
+          "alpha": 0.00403
+        },
+        "679-AL1/86-ST1A 220.0": {
+          "c_nf_per_km": 11.7,
+          "r_ohm_per_km": 0.042,
+          "x_ohm_per_km": 0.275,
+          "max_i_ka": 1.15,
+          "type": "ol",
+          "q_mm2": 679,
+          "alpha": 0.00403
+        },
+        "490-AL1/64-ST1A 380.0": {
+          "c_nf_per_km": 11,
+          "r_ohm_per_km": 0.059,
+          "x_ohm_per_km": 0.253,
+          "max_i_ka": 0.96,
+          "type": "ol",
+          "q_mm2": 490,
+          "alpha": 0.00403
+        },
+        "679-AL1/86-ST1A 380.0": {
+          "c_nf_per_km": 14.6,
+          "r_ohm_per_km": 0.042,
+          "x_ohm_per_km": 0.25,
+          "max_i_ka": 1.15,
+          "type": "ol",
+          "q_mm2": 679,
+          "alpha": 0.00403
+        }
+      },
+      "trafo": {
+        "160 MVA 380/110 kV": {
+          "i0_percent": 0.06,
+          "pfe_kw": 60,
+          "vkr_percent": 0.25,
+          "sn_mva": 160,
+          "vn_lv_kv": 110.0,
+          "vn_hv_kv": 380.0,
+          "vk_percent": 12.2,
+          "shift_degree": 0,
+          "vector_group": "Yy0",
+          "tap_side": "hv",
+          "tap_neutral": 0,
+          "tap_min": -9,
+          "tap_max": 9,
+          "tap_step_degree": 0,
+          "tap_step_percent": 1.5,
+          "tap_phase_shifter": false
+        },
+        "100 MVA 220/110 kV": {
+          "i0_percent": 0.06,
+          "pfe_kw": 55,
+          "vkr_percent": 0.26,
+          "sn_mva": 100,
+          "vn_lv_kv": 110.0,
+          "vn_hv_kv": 220.0,
+          "vk_percent": 12.0,
+          "shift_degree": 0,
+          "vector_group": "Yy0",
+          "tap_side": "hv",
+          "tap_neutral": 0,
+          "tap_min": -9,
+          "tap_max": 9,
+          "tap_step_degree": 0,
+          "tap_step_percent": 1.5,
+          "tap_phase_shifter": false
+        },
+        "63 MVA 110/20 kV": {
+          "i0_percent": 0.04,
+          "pfe_kw": 22,
+          "vkr_percent": 0.32,
+          "sn_mva": 63,
+          "vn_lv_kv": 20.0,
+          "vn_hv_kv": 110.0,
+          "vk_percent": 18,
+          "shift_degree": 150,
+          "vector_group": "YNd5",
+          "tap_side": "hv",
+          "tap_neutral": 0,
+          "tap_min": -9,
+          "tap_max": 9,
+          "tap_step_degree": 0,
+          "tap_step_percent": 1.5,
+          "tap_phase_shifter": false
+        },
+        "40 MVA 110/20 kV": {
+          "i0_percent": 0.05,
+          "pfe_kw": 18,
+          "vkr_percent": 0.34,
+          "sn_mva": 40,
+          "vn_lv_kv": 20.0,
+          "vn_hv_kv": 110.0,
+          "vk_percent": 16.2,
+          "shift_degree": 150,
+          "vector_group": "YNd5",
+          "tap_side": "hv",
+          "tap_neutral": 0,
+          "tap_min": -9,
+          "tap_max": 9,
+          "tap_step_degree": 0,
+          "tap_step_percent": 1.5,
+          "tap_phase_shifter": false
+        },
+        "25 MVA 110/20 kV": {
+          "i0_percent": 0.07,
+          "pfe_kw": 14,
+          "vkr_percent": 0.41,
+          "sn_mva": 25,
+          "vn_lv_kv": 20.0,
+          "vn_hv_kv": 110.0,
+          "vk_percent": 12,
+          "shift_degree": 150,
+          "vector_group": "YNd5",
+          "tap_side": "hv",
+          "tap_neutral": 0,
+          "tap_min": -9,
+          "tap_max": 9,
+          "tap_step_degree": 0,
+          "tap_step_percent": 1.5,
+          "tap_phase_shifter": false
+        },
+        "63 MVA 110/10 kV": {
+          "sn_mva": 63,
+          "vn_hv_kv": 110,
+          "vn_lv_kv": 10,
+          "vk_percent": 18,
+          "vkr_percent": 0.32,
+          "pfe_kw": 22,
+          "i0_percent": 0.04,
+          "shift_degree": 150,
+          "vector_group": "YNd5",
+          "tap_side": "hv",
+          "tap_neutral": 0,
+          "tap_min": -9,
+          "tap_max": 9,
+          "tap_step_degree": 0,
+          "tap_step_percent": 1.5,
+          "tap_phase_shifter": false
+        },
+        "40 MVA 110/10 kV": {
+          "sn_mva": 40,
+          "vn_hv_kv": 110,
+          "vn_lv_kv": 10,
+          "vk_percent": 16.2,
+          "vkr_percent": 0.34,
+          "pfe_kw": 18,
+          "i0_percent": 0.05,
+          "shift_degree": 150,
+          "vector_group": "YNd5",
+          "tap_side": "hv",
+          "tap_neutral": 0,
+          "tap_min": -9,
+          "tap_max": 9,
+          "tap_step_degree": 0,
+          "tap_step_percent": 1.5,
+          "tap_phase_shifter": false
+        },
+        "25 MVA 110/10 kV": {
+          "sn_mva": 25,
+          "vn_hv_kv": 110,
+          "vn_lv_kv": 10,
+          "vk_percent": 12,
+          "vkr_percent": 0.41,
+          "pfe_kw": 14,
+          "i0_percent": 0.07,
+          "shift_degree": 150,
+          "vector_group": "YNd5",
+          "tap_side": "hv",
+          "tap_neutral": 0,
+          "tap_min": -9,
+          "tap_max": 9,
+          "tap_step_degree": 0,
+          "tap_step_percent": 1.5,
+          "tap_phase_shifter": false
+        },
+        "0.25 MVA 20/0.4 kV": {
+          "sn_mva": 0.25,
+          "vn_hv_kv": 20,
+          "vn_lv_kv": 0.4,
+          "vk_percent": 6,
+          "vkr_percent": 1.44,
+          "pfe_kw": 0.8,
+          "i0_percent": 0.32,
+          "shift_degree": 150,
+          "vector_group": "Yzn5",
+          "tap_side": "hv",
+          "tap_neutral": 0,
+          "tap_min": -2,
+          "tap_max": 2,
+          "tap_step_degree": 0,
+          "tap_step_percent": 2.5,
+          "tap_phase_shifter": false
+        },
+        "0.4 MVA 20/0.4 kV": {
+          "sn_mva": 0.4,
+          "vn_hv_kv": 20,
+          "vn_lv_kv": 0.4,
+          "vk_percent": 6,
+          "vkr_percent": 1.425,
+          "pfe_kw": 1.35,
+          "i0_percent": 0.3375,
+          "shift_degree": 150,
+          "vector_group": "Dyn5",
+          "tap_side": "hv",
+          "tap_neutral": 0,
+          "tap_min": -2,
+          "tap_max": 2,
+          "tap_step_degree": 0,
+          "tap_step_percent": 2.5,
+          "tap_phase_shifter": false
+        },
+        "0.63 MVA 20/0.4 kV": {
+          "sn_mva": 0.63,
+          "vn_hv_kv": 20,
+          "vn_lv_kv": 0.4,
+          "vk_percent": 6,
+          "vkr_percent": 1.206,
+          "pfe_kw": 1.65,
+          "i0_percent": 0.2619,
+          "shift_degree": 150,
+          "vector_group": "Dyn5",
+          "tap_side": "hv",
+          "tap_neutral": 0,
+          "tap_min": -2,
+          "tap_max": 2,
+          "tap_step_degree": 0,
+          "tap_step_percent": 2.5,
+          "tap_phase_shifter": false
+        },
+        "0.25 MVA 10/0.4 kV": {
+          "sn_mva": 0.25,
+          "vn_hv_kv": 10,
+          "vn_lv_kv": 0.4,
+          "vk_percent": 4,
+          "vkr_percent": 1.2,
+          "pfe_kw": 0.6,
+          "i0_percent": 0.24,
+          "shift_degree": 150,
+          "vector_group": "Dyn5",
+          "tap_side": "hv",
+          "tap_neutral": 0,
+          "tap_min": -2,
+          "tap_max": 2,
+          "tap_step_degree": 0,
+          "tap_step_percent": 2.5,
+          "tap_phase_shifter": false
+        },
+        "0.4 MVA 10/0.4 kV": {
+          "sn_mva": 0.4,
+          "vn_hv_kv": 10,
+          "vn_lv_kv": 0.4,
+          "vk_percent": 4,
+          "vkr_percent": 1.325,
+          "pfe_kw": 0.95,
+          "i0_percent": 0.2375,
+          "shift_degree": 150,
+          "vector_group": "Dyn5",
+          "tap_side": "hv",
+          "tap_neutral": 0,
+          "tap_min": -2,
+          "tap_max": 2,
+          "tap_step_degree": 0,
+          "tap_step_percent": 2.5,
+          "tap_phase_shifter": false
+        },
+        "0.63 MVA 10/0.4 kV": {
+          "sn_mva": 0.63,
+          "vn_hv_kv": 10,
+          "vn_lv_kv": 0.4,
+          "vk_percent": 4,
+          "vkr_percent": 1.0794,
+          "pfe_kw": 1.18,
+          "i0_percent": 0.1873,
+          "shift_degree": 150,
+          "vector_group": "Dyn5",
+          "tap_side": "hv",
+          "tap_neutral": 0,
+          "tap_min": -2,
+          "tap_max": 2,
+          "tap_step_degree": 0,
+          "tap_step_percent": 2.5,
+          "tap_phase_shifter": false
+        }
+      },
+      "trafo3w": {
+        "63/25/38 MVA 110/20/10 kV": {
+          "sn_hv_mva": 63,
+          "sn_mv_mva": 25,
+          "sn_lv_mva": 38,
+          "vn_hv_kv": 110,
+          "vn_mv_kv": 20,
+          "vn_lv_kv": 10,
+          "vk_hv_percent": 10.4,
+          "vk_mv_percent": 10.4,
+          "vk_lv_percent": 10.4,
+          "vkr_hv_percent": 0.28,
+          "vkr_mv_percent": 0.32,
+          "vkr_lv_percent": 0.35,
+          "pfe_kw": 35,
+          "i0_percent": 0.89,
+          "shift_mv_degree": 0,
+          "shift_lv_degree": 0,
+          "vector_group": "YN0yn0yn0",
+          "tap_side": "hv",
+          "tap_neutral": 0,
+          "tap_min": -10,
+          "tap_max": 10,
+          "tap_step_percent": 1.2
+        },
+        "63/25/38 MVA 110/10/10 kV": {
+          "sn_hv_mva": 63,
+          "sn_mv_mva": 25,
+          "sn_lv_mva": 38,
+          "vn_hv_kv": 110,
+          "vn_mv_kv": 10,
+          "vn_lv_kv": 10,
+          "vk_hv_percent": 10.4,
+          "vk_mv_percent": 10.4,
+          "vk_lv_percent": 10.4,
+          "vkr_hv_percent": 0.28,
+          "vkr_mv_percent": 0.32,
+          "vkr_lv_percent": 0.35,
+          "pfe_kw": 35,
+          "i0_percent": 0.89,
+          "shift_mv_degree": 0,
+          "shift_lv_degree": 0,
+          "vector_group": "YN0yn0yn0",
+          "tap_side": "hv",
+          "tap_neutral": 0,
+          "tap_min": -10,
+          "tap_max": 10,
+          "tap_step_percent": 1.2
+        }
+      }
+    },
+    "res_bus": {
+      "_module": "pandas.core.frame",
+      "_class": "DataFrame",
+      "_object": "{\"columns\":[\"vm_pu\",\"va_degree\",\"p_mw\",\"q_mvar\"],\"index\":[11,12,13,14,21,31,41,42,51,61,62,63,71,72,81,82,83,91,101,102,111,121,131,135,136,137,138,141,142,144,145,151,152,161,171,181,191,201,202,203,208,211,221,231,241,242,251,261,271,274,281,283,284,291,292,301,311,312,321,323,331,335,336,337,341,351,361,371,381,382,383,391,393,401,402,409,411,412,421,422,427,428,429,431,432,433,441,442,443,444,451,461,471,481,491,501,511,515,521,522,531,532,541,542,545,551,561,50050],\"data\":[[1.047173370364248,-6.122571941871412,200.0,80.0],[1.02941,-0.713708930788021,-200.0,38.513219011501157],[1.050703175078259,-6.038006059803532,0.0,0.0],[1.02941,-1.19026891696041,-364.100000000000023,79.499050929775535],[0.975476502512592,-59.898185397148772,6.0,0.5],[0.974747276216402,-66.700504071120832,0.0,0.0],[1.033674710038498,-45.740949931331009,500.0,50.0],[null,null,0.0,0.0],[0.966638272652647,-66.388805929433261,0.0,0.0],[1.001021226435296,-53.572988570466279,800.0,302.0],[1.025,-50.249292231110367,-599.999999999999886,-251.086515373900284],[1.025,-48.811469750995712,-400.0,-123.245586583822814],[1.012780238508068,-45.555634605619936,540.0,160.0],[1.02,-45.567893541803414,0.0,-0.442054213734139],[1.021112725560294,-48.112324293159219,100.0,50.0],[1.045,-45.244643083892242,-539.0,-252.254914812674599],[1.045,-45.244643083892242,-539.0,-252.254914812674542],[0.9655985356574,-66.504985306381272,2.5,0.5],[0.99836612872416,-65.09901211375562,0.0,0.0],[1.001,-65.063554817614417,-3.900000000000091,-15.773379065718018],[0.974735337677022,-69.751974604017604,2.5,0.5],[0.956103116728052,-68.810863545806186,4.5,0.799999999999954],[1.021135378808343,-4.558745617398108,2000.0,500.0],[1.03,0.0,-838.283338425206239,-107.835643939241095],[1.03,-0.208899066412982,-800.0,-105.622673497402957],[1.03,0.882967080161469,-200.0,-23.746124310085065],[1.03,0.882967080161469,-200.0,-23.746124310084952],[0.998706357428747,-54.32266021268368,0.0,6.034357049630004],[0.955881885103814,-52.360139018906587,300.0,80.0],[0.97778,-46.880295198225895,-359.0,-95.571074401494798],[null,null,0.0,0.0],[1.04965283171325,-4.99724419740652,300.0,100.0],[1.02897,-0.197735318378721,-300.0,64.329070716768228],[0.96120415203656,-67.511727924224076,0.0,0.0],[0.977523184303294,-66.471910478180988,0.0,0.0],[0.960737401341462,-67.51590219321335,2.5,0.5],[0.990647361210939,-64.847095620909698,4.5,0.799999999999954],[1.01715867781621,-46.220246319139463,400.0,150.0],[1.05,-42.886796517596039,-629.0,-350.862385717741972],[1.05,-41.695223602627301,-170.0,-72.239298445656459],[1.01715867781621,-46.220246319139463,0.0,0.0],[1.003592433260591,-60.531309041184635,1.5,0.380000000000109],[1.013577198579601,-61.041607227600373,8.0,1.5],[0.982132081864196,-59.845964323047795,8.0,1.5],[1.002173152987266,-64.289859162571119,0.0,0.0],[0.997439540940592,-64.985475838026588,0.0,0.0],[0.979542194156343,-53.026896857191353,700.0,250.200000000000045],[0.986324130382217,-56.515531266468642,1.5,0.380000000000109],[1.070123616423633,-22.055879936902638,0.0,0.0],[1.0472,-16.54904413670624,-250.0,48.954892511746948],[1.083644163210296,-9.494892585472403,200.0,50.0],[1.1,-4.874991916730721,-450.0,-93.052016229300989],[1.1,-4.100748179198781,-300.0,-56.065103518914839],[0.978412323515486,-52.884414099042644,0.0,0.0],[0.964890421117783,-53.204709342335171,800.0,300.000000000000227],[0.9732773316924,-66.781890147336696,0.0,0.0],[0.995066331463153,-65.121356600745841,0.0,0.0],[0.909159918954393,-66.778043198171616,600.0,80.0],[1.086796758176095,-0.34550339951595,0.0,0.0],[1.11704,4.34464356141042,-400.0,-143.417896223567595],[1.047143880833367,-40.448191934713357,300.0,-189.127576791690956],[1.03,-34.793711339591681,-530.0,72.665072601239217],[1.03,-35.326398300951432,-160.0,25.457940658282268],[null,null,0.0,0.0],[0.985162376339659,-68.621862067463283,2.5,0.5],[0.997211030437263,-59.656106419335266,1.5,0.380000000000109],[0.961669979325578,-67.507541210034276,1.5,0.380000000000109],[1.039786344519128,-59.694807870897222,8.0,1.5],[1.057743867337219,-23.552133775996282,100.0,30.0],[1.02941,-19.07236921891781,-310.0,89.286525133688428],[1.057561512697369,-24.005107953808508,0.0,-223.687270627749456],[1.045479103618506,12.293728205966183,0.0,0.0],[1.05926,17.455728661225418,-400.0,-68.36961814109145],[1.036886759979868,-12.502436551219727,280.0,95.0],[1.04055701310307,-12.876192428793811,0.0,0.0],[1.02222,-7.076534421951653,-200.0,24.491824816343978],[0.998894042132911,-64.952185560209656,0.0,0.0],[1.00299,-64.843472929331668,-3.899999999999636,-8.173216433492826],[1.056172456553484,-4.522316341811628,300.0,100.0],[1.053555298954449,-4.758967810648861,0.0,0.0],[1.03,0.550320446068123,-400.0,86.442487596107867],[1.03,-0.772160665071427,-100.0,30.85411697299719],[null,null,0.0,0.0],[1.034626686675094,-36.640734802110039,590.0,300.0],[1.05,-31.062704034539344,-530.0,-95.849985932411528],[1.05,-31.062704034539344,-530.0,-95.849985932411528],[0.970277595174439,-56.094034939345015,700.0,249.0],[1.005815361876512,-57.832708494000684,0.0,0.0],[1.056034266545056,-58.526338274577419,0.0,0.0],[0.974475921523923,-55.768165392257075,0.0,0.0],[1.062839681105445,-27.992479378463237,0.0,-112.96281877323247],[0.972540555389514,-66.417767088973747,0.0,0.0],[0.999785777915894,-63.743195291644263,0.0,0.0],[0.96239,-66.130351102521018,-3.399999999999636,6.081338803371409],[0.975032231951207,-66.444916205357899,0.0,0.0],[0.981180258799284,-52.344376671677828,900.0,303.0],[1.058525275224456,-3.480784997373339,100.0,40.0],[null,null,0.0,0.0],[1.006590260129341,-66.43190790786899,0.0,0.0],[0.981651222250781,-65.374227982030419,0.0,0.0],[0.997595363131758,-64.988294485801191,0.0,0.0],[0.981804577956198,-65.377046629805022,0.0,0.0],[0.999349660532672,-64.907912452672988,0.0,0.0],[0.938039115942016,-61.385292179035012,225.0,4.0],[0.97778,-55.807186752927564,-180.0,-82.818796439062908],[0.978700538868852,-58.383408278598367,1.5,0.380000000000109],[0.97401252874544,-66.741174653581169,0.0,0.0],[1.08815,0.43125604068012,-400.0,-148.385314824485249]]}",
+      "orient": "split",
+      "dtype": {
+        "vm_pu": "float64",
+        "va_degree": "float64",
+        "p_mw": "float64",
+        "q_mvar": "float64"
+      }
+    },
+    "res_line": {
+      "_module": "pandas.core.frame",
+      "_class": "DataFrame",
+      "_object": "{\"columns\":[\"p_from_mw\",\"q_from_mvar\",\"p_to_mw\",\"q_to_mvar\",\"pl_mw\",\"ql_mvar\",\"i_from_ka\",\"i_to_ka\",\"i_ka\",\"vm_from_pu\",\"va_from_degree\",\"vm_to_pu\",\"va_to_degree\",\"loading_percent\"],\"index\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74],\"data\":[[-127.722351146581289,-9.587797896435038,128.584317417588949,12.958863588892596,0.86196627100766,3.371065692457558,0.523087253344661,0.522139772941754,0.523087253344661,1.047173370364248,-6.122571941871412,1.058525275224456,-3.480784997373339,26.154362667233027],[-308.301736813642322,-6.51361562197151,309.162899981437704,-8.736638336409271,0.861163167795382,-15.250253958380782,0.423615862190578,0.423723700436208,0.423723700436208,1.050703175078259,-6.038006059803532,1.053555298954449,-4.758967810648861,50.443297670977117],[-43.659770179408227,-69.570550027610764,43.748793148883777,-84.030619294131668,0.08902296947555,-153.601169321742418,0.11283144045979,0.130272693654693,0.130272693654693,1.050703175078259,-6.038006059803532,1.04965283171325,-4.99724419740652,15.50865400651108],[326.783021413846598,-52.821807512771414,-322.907319710114678,-39.625339028160354,3.87570170373192,-92.447146540931769,0.454736282803928,0.451270547190588,0.454736282803928,1.050703175078259,-6.038006059803532,1.04055701310307,-12.876192428793811,54.135271762372405],[515.814759022400381,-112.192289687309696,-501.34546046218793,54.462520800193005,14.469298560212451,-57.729768887116691,0.725154255334238,0.680189755032624,0.725154255334238,1.050703175078259,-6.038006059803532,1.070123616423633,-22.055879936902638,57.551925026526796],[-5.45523584599621,0.814604162505853,5.492963290456975,-0.672708817344209,0.037727444460765,0.141895345161644,0.296778315018429,0.296781076177133,0.296781076177133,0.975476502512592,-59.898185397148772,0.978700538868852,-58.383408278598367,63.144909824921967],[4.554821295785602,0.972134890787167,-4.499999999999952,-0.799999999999924,0.05482129578565,0.172134890787243,0.250783455408938,0.250906073188994,0.250906073188994,0.974747276216402,-66.700504071120832,0.956103116728052,-68.810863545806186,53.384270891275378],[-5.567337551838541,-1.559674605294434,5.651727983496631,1.83042093347697,0.08439043165809,0.270746328182535,0.311321249257357,0.311132193083959,0.311321249257357,0.974747276216402,-66.700504071120832,1.002173152987266,-64.289859162571119,66.238563671778039],[1.012516256052925,0.587539714507336,-1.012169930632671,-0.587517380922408,0.000346325420255,0.000022333584928,0.063034320849107,0.063065125803369,0.063065125803369,0.974747276216402,-66.700504071120832,0.97401252874544,-66.741174653581169,6.006202457463669],[-498.896231885544808,-28.703664530812489,503.555334251843135,10.34487679359512,4.659102366298328,-18.358787737217369,0.697787729066529,0.694243542808221,0.697787729066529,1.033674710038498,-45.740949931331009,1.047143880833367,-40.448191934713357,68.410561673189093],[2.501672992687711,0.50449143425745,-2.50000000000001,-0.500000000000135,0.001672992687701,0.004491434257315,0.138570000404495,0.13858198168209,0.13858198168209,0.966638272652647,-66.388805929433261,0.9655985356574,-66.504985306381272,29.485528017465978],[2.284134013754477,0.044022305073787,-2.270726948327961,-0.010754430320635,0.013407065426517,0.033267874753152,0.124046617626525,0.124054286219147,0.124054286219147,0.966638272652647,-66.388805929433261,0.960737401341462,-67.51590219321335,26.394528982797226],[431.334544504788596,53.717125649247464,-425.601292272054138,-85.620255206280234,5.733252232734458,-31.90312955703277,0.61947016294011,0.640435589250733,0.640435589250733,1.012780238508068,-45.555634605619936,0.978412323515486,-52.884414099042644,50.828221369105783],[1.234053559669732,-113.849992841039949,-1.103768114424481,-21.296335469186221,0.130285445245251,-135.146328310226181,0.162264188215786,0.029777134241131,0.162264188215786,1.012780238508068,-45.555634605619936,1.033674710038498,-45.740949931331009,19.317165263784002],[8.305670943257788,9.17186683562851,-8.282043073462811,-10.46733322004366,0.023627869794977,-1.29546638441515,0.143112475671574,0.154888491546046,0.154888491546046,0.99836612872416,-65.09901211375562,0.995066331463153,-65.121356600745841,32.954998201286365],[-4.40619790777806,6.557598520231939,4.416404299542723,-7.876541059303699,0.010206391764664,-1.31894253907176,0.091375518933416,0.104539445910854,0.104539445910854,0.99836612872416,-65.09901211375562,0.997439540940592,-64.985475838026588,22.242435300181793],[8.642169891724528,0.649196906272919,-8.553311736036594,-0.314490284334576,0.088858155687934,0.334706621938342,0.455463503361933,0.455464669114624,0.455464669114624,0.998706357428747,-54.32266021268368,0.986324130382217,-56.515531266468642,47.943649380486782],[20.437577856408225,-10.568534997385319,-20.195995349266859,6.081710242692921,0.241582507141366,-4.486824754692398,0.102941059217298,0.092965953743087,0.102941059217298,0.955881885103814,-52.360139018906587,0.970277595174439,-56.094034939345015,10.294105921729797],[9.40906177112149,-13.680723399716102,-9.380157735262035,2.087449812399749,0.028904035859455,-11.593273587316354,0.074287194251403,0.042592569962166,0.074287194251403,0.955881885103814,-52.360139018906587,0.964890421117783,-53.204709342335171,1.250626165848529],[-34.36616114847579,-17.152164271450488,34.944395235567697,-405.963200653170418,0.578234087091907,-423.115364924620906,0.052815760019715,0.575951243825111,0.575951243825111,1.04965283171325,-4.99724419740652,1.021135378808343,-4.558745617398108,34.282812132447098],[-0.229348816943222,-0.488391541160708,0.229424300901018,0.487535493392559,0.000075483957796,-0.000856047768149,0.029462691894379,0.029407890228668,0.029462691894379,0.96120415203656,-67.511727924224076,0.961669979325578,-67.507541210034276,2.805970656607545],[-0.229273051672057,-0.489245569679626,0.229348816943281,0.488391541160851,0.000075765271224,-0.000854028518775,0.029517487575529,0.029462691894388,0.029517487575529,0.960737401341462,-67.51590219321335,0.96120415203656,-67.511727924224076,2.811189292907492],[734.345103144834866,158.164267281982347,-723.265979101234507,-125.003998857839065,11.079124043600359,33.160268424143283,1.065951605819873,1.079742161964319,1.079742161964319,1.01715867781621,-46.220246319139463,0.981180258799284,-52.344376671677828,44.07110865160486],[594.584946880471989,140.179866192667845,-587.184162418731489,-125.92909509517105,7.4007844617405,14.250771097496795,0.866863696173862,0.885923961166905,0.885923961166905,1.01715867781621,-46.220246319139463,0.978412323515486,-52.884414099042644,59.061597411126989],[-2.84648217601476,2.22000804834797,2.861749796481457,-2.162831330584813,0.015267620466697,0.057176717763157,0.188788900495329,0.188801691005973,0.188801691005973,1.003592433260591,-60.531309041184635,0.997211030437263,-59.656106419335266,40.170572554462439],[-1.336439490763587,2.637473979494127,1.346482176014981,-2.600008048348019,0.010042685251394,0.037465931146107,0.153110046870739,0.15312889271799,0.15312889271799,1.013577198579601,-61.041607227600373,1.003592433260591,-60.531309041184635,32.580615471912665],[0.547274628502426,1.323688402329501,-0.544764154003457,-1.314604162505862,0.002510474498969,0.00908423982364,0.076547240458372,0.076566227755227,0.076566227755227,0.982132081864196,-59.845964323047795,0.975476502512592,-59.898185397148772,16.29068675643131],[-585.125808197427432,-231.931244109231443,589.144688992925467,242.160103330860409,4.018880795498035,10.228859221628966,0.927457268149113,0.900380018015941,0.927457268149113,0.979542194156343,-53.026896857191353,1.021112725560294,-48.112324293159219,61.830484543274188],[7.053311736036483,-0.065509715665488,-6.992963290456965,0.292708817344105,0.060348445579518,0.227199101678616,0.375352090563103,0.375351564750405,0.375352090563103,0.986324130382217,-56.515531266468642,0.978700538868852,-58.383408278598367,79.862146928319831],[456.221294660557646,-65.339107205720268,-437.056677603312551,-69.981171764491364,19.164617057245096,-135.320278970211632,0.621627065750884,0.628095264047414,0.628095264047414,1.070123616423633,-22.055879936902638,1.01715867781621,-46.220246319139463,61.577967063471995],[294.616923150428875,-63.435365728748458,-291.584103054812942,-42.723997844685897,3.032820095615932,-106.159363573434348,0.406484301362288,0.400210154835164,0.406484301362288,1.070123616423633,-22.055879936902638,1.062839681105445,-27.992479378463237,48.390988257415188],[479.931979043188562,-54.84265982498593,-477.525798314004192,-35.509172669364801,2.406180729184371,-90.351832494350731,0.712613946543956,0.709255186917148,0.712613946543956,0.978412323515486,-52.884414099042644,0.974475921523923,-55.768165392257075,42.417496818092602],[1.739113092117594,0.888239223077703,-1.729424300900731,-0.867535493393016,0.009688791216863,0.020703729684687,0.105310336729956,0.105599307404177,0.105599307404177,0.9732773316924,-66.781890147336696,0.961669979325578,-67.507541210034276,22.467937745569678],[-0.727289825314951,-0.300747028916497,0.728850130844179,0.293992785568959,0.001560305529228,-0.006754243347538,0.042441959048942,0.042198046411532,0.042441959048942,0.9732773316924,-66.781890147336696,0.977523184303294,-66.471910478180988,9.030204052966456],[-298.314635351101117,-37.242066604162488,305.906256101318434,93.378205644079728,7.591620750217316,56.136139039917239,1.414158575215983,1.409754344676369,1.414158575215983,0.909159918954393,-66.778043198171616,0.970277595174439,-56.094034939345015,66.082176411961839],[-293.423301974958065,-32.914627921251792,298.308347054494959,60.187650900532446,4.885045079536894,27.273022979280654,1.388913716263949,1.387441210324384,1.388913716263949,0.909159918954393,-66.778043198171616,0.938039115942016,-61.385292179035012,64.902510105792004],[-464.634873717990786,51.101248621239762,467.895058722515046,-213.526040491233175,3.26018500452426,-162.424791869993413,0.644311177292596,0.717503905291895,0.717503905291895,1.047143880833367,-40.448191934713357,1.034626686675094,-36.640734802110039,42.708565791184235],[2.516404139622863,0.542922098834826,-2.500000000000004,-0.499999999999999,0.016404139622859,0.042922098834827,0.137151048186949,0.137282966368728,0.137282966368728,0.985162376339659,-68.621862067463283,0.974735337677022,-69.751974604017604,29.209141780580389],[-19.279171325427832,5.745868181066487,19.75939666357537,-3.935247266220006,0.480225338147537,1.81062091484648,1.058831841329905,1.058836878895686,1.058836878895686,0.997211030437263,-59.656106419335266,0.998706357428747,-54.32266021268368,100.841607513874877],[6.73422233871933,4.403531213842359,-6.663560509235238,-4.137473979494328,0.070661829484092,0.266057234348031,0.406154935515866,0.406166521547258,0.406166521547258,1.039786344519128,-59.694807870897222,1.013577198579601,-61.041607227600373,42.754370689185045],[-530.990288012263704,69.515440470791844,548.674759933520932,32.868466392903571,17.684471921257227,102.383906863695415,1.328657183654366,1.331137274202796,1.331137274202796,1.057743867337219,-23.552133775996282,1.083644163210296,-9.494892585472403,52.822907706460164],[771.032607237038292,-122.49170772716738,-765.617305997135759,142.923752013120122,5.415301239902533,20.432044285952742,1.065513595880088,1.057698213385595,1.065513595880088,1.057561512697369,-24.005107953808508,1.062839681105445,-27.992479378463237,43.490350852248468],[1000.863563177635797,-37.905282612585324,-972.568691976217451,-99.428207551458684,28.294871201418346,-137.333490164044008,1.366972761778942,1.393292130667354,1.393292130667354,1.057561512697369,-24.005107953808508,1.012780238508068,-45.555634605619936,55.289370264577556],[399.266177605767382,31.685837387594951,-373.83879308176148,132.190392651487286,25.427384524005902,163.87623003908223,1.638385450167883,1.635466405418848,1.638385450167883,1.045479103618506,12.293728205966183,1.036886759979868,-12.502436551219727,65.015295641582668],[1053.00138914691388,-220.233949255184854,-1032.369528470958812,162.409125935931229,20.631860675955068,-57.824823319253625,1.492242058597538,1.426322018403711,1.492242058597538,1.04055701310307,-12.876192428793811,1.057561512697369,-24.005107953808508,59.215954706251516],[-3.471383426099266,-0.490504624925127,3.473103382940168,-0.844540581594696,0.001719956840902,-1.335045206519823,0.040527076904733,0.04129944181264,0.04129944181264,0.998894042132911,-64.952185560209656,0.999349660532672,-64.907912452672988,8.787115279285114],[-165.803831535605752,-32.425748353810562,167.861836073626733,41.982265866770511,2.058004538020981,9.55651751295995,0.684093638706758,0.680900952055893,0.684093638706758,1.056172456553484,-4.522316341811628,1.086796758176095,-0.34550339951595,34.204681935337931],[9.922907246895615,-75.998642460161619,-9.916104270698016,-89.814565408760501,0.0068029761976,-165.81320786892212,0.1050022353257,0.124254293040314,0.124254293040314,1.053555298954449,-4.758967810648861,1.04965283171325,-4.99724419740652,14.79217774289458],[444.520909696796196,-38.568254901081289,-437.38610111329325,-14.120897430599996,7.134808583502945,-52.689152331681285,0.611283660240565,0.60702236814652,0.611283660240565,1.053555298954449,-4.758967810648861,1.04055701310307,-12.876192428793811,59.929770611820054],[8.646398326040515,3.197107096844419,-8.54727462850169,-2.823688402329609,0.099123697538825,0.373418694514809,0.481051003361712,0.481057899140944,0.481057899140944,1.005815361876512,-57.832708494000684,0.982132081864196,-59.845964323047795,50.637673593783546],[14.839087810107493,6.299250388512958,-14.734222338717505,-5.903531213842506,0.104865471389989,0.395719174670453,0.801224718741667,0.801233109973443,0.801233109973443,1.056034266545056,-58.526338274577419,1.039786344519128,-59.694807870897222,76.307915235566028],[-336.579732931873139,-110.864006548503099,349.703633978324206,-39.223075841997627,13.123901046451067,-150.087082390500711,0.524883449506379,0.48505150308638,0.524883449506379,0.974475921523923,-55.768165392257075,1.047143880833367,-40.448191934713357,62.486124941235623],[-197.422441226117712,-219.969682068299733,198.48004672413586,-3.651881039988197,1.057605498018148,-223.621563108287944,0.437794450355603,0.286237445180892,0.437794450355603,0.974475921523923,-55.768165392257075,1.001021226435296,-53.572988570466279,26.059193473547772],[538.767791128093791,49.330045611665895,-521.534509001164224,-60.504908920842638,17.233282126929566,-11.174863309176743,0.734727148805389,0.774539596047685,0.774539596047685,1.062839681105445,-27.992479378463237,0.978412323515486,-52.884414099042644,61.471396511721011],[518.433617923820179,-36.566981006728611,-494.12387218589771,-17.711011280244406,24.309745737922469,-54.277992286973017,0.705801216855776,0.701625407352906,0.705801216855776,1.062839681105445,-27.992479378463237,1.01715867781621,-46.220246319139463,56.015969591728279],[1.410314444501834,6.709810089279432,-1.398383869461088,-6.670921086973113,0.011930575040746,0.038889002306319,0.370029695866367,0.370089461693231,0.370089461693231,0.972540555389514,-66.417767088973747,0.966638272652647,-66.388805929433261,78.742438658134248],[-0.311567881829464,-2.917801987185675,0.313751940670557,2.923989770757435,0.002184058841093,0.00618778357176,0.158364107724658,0.158303123476199,0.158364107724658,0.972540555389514,-66.417767088973747,0.975032231951207,-66.444916205357899,33.694491005246363],[10.10961384871608,-5.923042009459463,-10.076652620685927,6.032397108232026,0.032961228030153,0.109355098772563,0.615111711093482,0.615079584287117,0.615111711093482,0.999785777915894,-63.743195291644263,1.002173152987266,-64.289859162571119,64.748601167734947],[4.52511746149384,0.89432643945109,-4.499999999999896,-0.799999999999974,0.025117461493944,0.094326439451115,0.242153029424343,0.242156884452561,0.242156884452561,0.999785777915894,-63.743195291644263,0.990647361210939,-64.847095620909698,51.522741372885314],[-14.634731310209283,5.028715570008878,14.917421528947212,-3.963036850480333,0.28269021873793,1.065678719528545,0.812380053371504,0.812386151644391,0.812386151644391,0.999785777915894,-63.743195291644263,0.997211030437263,-59.656106419335266,77.370109680418224],[3.400000000000206,-6.081338803371516,-3.387423136981453,6.122407347642306,0.012576863018752,0.04106854427079,0.379977138590701,0.379924048832076,0.379977138590701,0.96239,-66.130351102521018,0.966638272652647,-66.388805929433261,80.846199700149214],[-0.313751940670628,-2.923989770757828,0.315934315293525,2.930166075315058,0.002182374622897,0.006176304557231,0.15830312347622,0.158241986578129,0.15830312347622,0.975032231951207,-66.444916205357899,0.977523184303294,-66.471910478180988,33.681515633238298],[-384.063897333928708,-172.720699251283634,387.558074983909876,147.500898794335797,3.494177649981168,-25.219800456947837,0.619485137741913,0.586160573301875,0.619485137741913,0.981180258799284,-52.344376671677828,1.021112725560294,-48.112324293159219,60.73383703352092],[115.011878773843591,-9.187638552223326,-114.874191802558116,-18.268755890770777,0.137686971285476,-27.456394442994103,0.16972843185017,0.171396662565519,0.171396662565519,0.981180258799284,-52.344376671677828,0.979542194156343,-53.026896857191353,20.404364591133223],[92.317997661337159,3.912336661354523,-92.225971982316821,-31.7921604971081,0.092025679020338,-27.879823835753577,0.135927270647628,0.143910724027252,0.143910724027252,0.981180258799284,-52.344376671677828,0.978412323515486,-52.884414099042644,17.132229050863323],[-228.584317417588864,-52.958863588891987,231.41460316224169,65.264104776057778,2.830285744652826,12.305241187165791,0.947991529166223,0.946164664506316,0.947991529166223,1.058525275224456,-3.480784997373339,1.086796758176095,-0.34550339951595,47.399576458311152],[1.073537663151042,3.308198657124307,-1.044784446137929,-3.22415886088357,0.028753217013112,0.084039796240737,0.181353828024162,0.181977911387829,0.181977911387829,1.006590260129341,-66.43190790786899,0.977523184303294,-66.471910478180988,38.718704550602006],[5.081289620968725,1.248061073700751,-5.016404139622825,-1.042922098834836,0.0648854813459,0.205138974865915,0.272827514118805,0.272973220035739,0.272973220035739,1.006590260129341,-66.43190790786899,0.985162376339659,-68.621862067463283,58.079408518242325],[1.138181968939246,3.911938955054042,-1.098746562672216,-3.792008102093764,0.039435406267031,0.119930852960278,0.212437569064358,0.213066041054766,0.213066041054766,1.006590260129341,-66.43190790786899,0.972540555389514,-66.417767088973747,45.333200224418398],[-7.30660432179743,-8.614942077165145,7.370894286724456,8.622959443851489,0.064289964927026,0.008017366686344,0.132875153619772,0.131133838279841,0.132875153619772,0.981651222250781,-65.374227982030419,0.998894042132911,-64.952185560209656,28.271309280802488],[0.0,0.0,0.000004895073079,-0.198992669767393,0.000004895073079,-0.198992669767393,0.0,0.00230366787712,0.00230366787712,0.997595363131758,-64.988294485801191,0.997439540940592,-64.985475838026588,0.219396940678133],[0.000000000000023,-0.000000000000051,0.000004741332752,-0.192742878494197,0.000004741332776,-0.192742878494248,6.56371263618923e-16,0.002267203468897,0.002267203468897,0.981804577956198,-65.377046629805022,0.981651222250781,-65.374227982030419,0.215924139894913],[0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.999349660532672,-64.907912452672988,0.995066331463153,-65.121356600745841,0.0],[-347.199188576509584,-1.273810319458107,353.549069634813918,48.82688300310457,6.349881058304334,47.553072683646462,1.582946656239331,1.581903371731916,1.582946656239331,0.938039115942016,-61.385292179035012,0.964890421117783,-53.204709342335171,62.815343501560761],[1.012169930632787,0.587517380922699,-1.011823266802581,-0.587492194161104,0.000346663830206,0.000025186761595,0.063065125803382,0.063095914473049,0.063095914473049,0.97401252874544,-66.741174653581169,0.9732773316924,-66.781890147336696,6.00913471171891]]}",
+      "orient": "split",
+      "dtype": {
+        "p_from_mw": "float64",
+        "q_from_mvar": "float64",
+        "p_to_mw": "float64",
+        "q_to_mvar": "float64",
+        "pl_mw": "float64",
+        "ql_mvar": "float64",
+        "i_from_ka": "float64",
+        "i_to_ka": "float64",
+        "i_ka": "float64",
+        "vm_from_pu": "float64",
+        "va_from_degree": "float64",
+        "vm_to_pu": "float64",
+        "va_to_degree": "float64",
+        "loading_percent": "float64"
+      }
+    },
+    "res_trafo": {
+      "_module": "pandas.core.frame",
+      "_class": "DataFrame",
+      "_object": "{\"columns\":[\"p_hv_mw\",\"q_hv_mvar\",\"p_lv_mw\",\"q_lv_mvar\",\"pl_mw\",\"ql_mvar\",\"i_hv_ka\",\"i_lv_ka\",\"vm_hv_pu\",\"va_hv_degree\",\"vm_lv_pu\",\"va_lv_degree\",\"loading_percent\"],\"index\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52],\"data\":[[-199.608532063109436,58.082700785094303,199.99999999999963,-38.513219011500809,0.391467936890194,19.569481773593495,0.285579796528838,6.719524624207962,1.050703175078259,-6.038006059803532,1.02941,-0.713708930788021,65.951828960417359],[72.416927479460369,70.756508082150234,-72.277648853417077,-70.412202103567907,0.139278626043293,0.344305978582327,0.139083620952011,0.412099617635589,1.050703175078259,-6.038006059803532,1.047173370364248,-6.122571941871412,48.17997959790695],[-363.444668859608498,112.259053982464252,364.099999999999568,-79.49905092977464,0.65533114039107,32.760003052689612,0.522546305919037,12.29520719809498,1.050703175078259,-6.038006059803532,1.02941,-1.19026891696041,60.338450077280058],[0.0,0.0,0.0,0.0,0.0,0.0,0.0,null,1.033674710038498,-45.740949931331009,null,null,null],[-399.285366297152734,-87.520333716633274,399.999999999999318,123.245586583822558,0.714633702846584,35.725252867189283,0.589399171468842,11.787983429376846,1.001021226435296,-53.572988570466279,1.025,-48.811469750995712,58.335389195602026],[-599.194680426976674,-210.82778524337823,599.999999999997726,251.086515373900482,0.805319573021052,40.258730130522252,0.915900952740104,18.318019054802086,1.001021226435296,-53.572988570466279,1.025,-50.249292231110367,42.303652929242709],[0.000093911922178,-0.438925256638804,0.000000000000102,0.442054213734135,0.00009391192228,0.003128957095331,0.000625539508078,0.014718576660658,1.012780238508068,-45.555634605619936,1.02,-45.567893541803414,7.223108067551228],[-538.351381988422872,-219.830501062599751,539.000000000001592,252.254914812674428,0.648618011578719,32.424413750074677,0.821975524003736,16.439510480074709,1.021112725560294,-48.112324293159219,1.045,-45.244643083892242,37.965423204067243],[-538.351381988422872,-219.830501062599751,539.000000000001592,252.254914812674428,0.648618011578719,32.424413750074677,0.821975524003736,16.439510480074709,1.021112725560294,-48.112324293159219,1.045,-45.244643083892242,37.965423204067243],[-3.899473035481824,-15.729465355859169,3.900000000000126,15.773379065717549,0.000526964518302,0.04391370985838,0.187432568905996,0.937162844529982,0.99836612872416,-65.09901211375562,1.001,-65.063554817614417,18.035707352130007],[-798.772445755195008,-44.257238027409215,799.999999999999886,105.622673497404449,1.227554244804878,61.365435469995234,1.130797213623379,26.606993261726572,1.021135378808343,-4.558745617398108,1.03,-0.208899066412982,52.22928605474695],[-199.617646541429423,-4.632275298573052,199.999999999999943,23.746124310085062,0.38235345857052,19.113849011512009,0.282235664889347,6.640839173866996,1.021135378808343,-4.558745617398108,1.03,0.882967080161469,65.179534839511078],[-836.936656397522142,-40.515010722258381,838.28333842520658,107.835643939241635,1.346682027684437,67.320633216983254,1.18439595526063,27.868140123779529,1.021135378808343,-4.558745617398108,1.03,0.0,54.704905887746293],[-199.617646541429423,-4.632275298573052,199.999999999999943,23.746124310085062,0.38235345857052,19.113849011512009,0.282235664889347,6.640839173866996,1.021135378808343,-4.558745617398108,1.03,0.882967080161469,65.179534839511078],[28.431566051911936,3.737835435639987,-28.401566555300391,-2.74830668968176,0.029999496611545,0.989528745958227,0.128298983402598,1.499598514158402,0.955881885103814,-52.360139018906587,0.998706357428747,-54.32266021268368,33.333053671910392],[0.0,0.0,0.0,0.0,0.0,0.0,0.0,null,0.955881885103814,-52.360139018906587,null,null,null],[-358.278205679436667,-59.488577038537443,358.99999999999875,95.571074401494741,0.721794320562083,36.082497362957298,1.624902594878341,10.968092515428806,0.955881885103814,-52.360139018906587,0.97778,-46.880295198225895,63.324311662795409],[-299.466527729721804,90.997348974391471,299.999999999999943,-64.329070716767987,0.533472270278139,26.668278257623484,0.430387531394553,10.126765444577726,1.04965283171325,-4.99724419740652,1.02897,-0.197735318378721,59.636245705560931],[-628.058965235895243,-303.882807020075404,628.99999999999784,350.862385717742313,0.941034764102596,46.979578697666909,0.990073000308654,19.801460006173077,1.01715867781621,-46.220246319139463,1.05,-42.886796517596039,45.729513059646528],[-169.690535000090478,-56.769143409753568,169.999999999999062,72.239298445656289,0.309464999908585,15.470155035902721,0.253913124869419,5.078262497388371,1.01715867781621,-46.220246319139463,1.05,-41.695223602627301,58.638724397655139],[0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.01715867781621,-46.220246319139463,1.01715867781621,-46.220246319139463,0.0],[-4.416409194614726,8.075533729072408,4.424924637190415,-7.862818041708994,0.008515442575689,0.212715687363414,0.106554790761819,0.472526791619962,0.997439540940592,-64.985475838026588,1.002173152987266,-64.289859162571119,30.759718564890242],[-249.492757348866121,74.311952134379197,249.999999999995822,-48.954892511746877,0.507242651129701,25.35705962263232,0.351124115337889,8.261743890303281,1.070123616423633,-22.055879936902638,1.0472,-16.54904413670624,69.504549431759884],[-449.252094411837675,-55.664216625149748,449.999999999999432,93.052016229301046,0.747905588161757,37.387799604151297,1.09629762573407,14.187381038911498,1.083644163210296,-9.494892585472403,1.1,-4.874991916730721,59.677928765354096],[-299.422665521698548,-27.204249767753353,299.999999999999659,56.065103518914768,0.577334478301111,28.860853751161414,0.728114713550836,9.422660998893166,1.083644163210296,-9.494892585472403,1.1,-4.100748179198781,69.362242268467867],[929.686991863059006,290.8289834144785,-927.704523161721227,-284.525134715261572,1.98246870133778,6.303848699216928,1.437035686359567,4.300892444747928,0.978412323515486,-52.884414099042644,0.964890421117783,-53.204709342335171,67.044278089732771],[216.926964768040392,67.860096130045576,-216.464388737736897,-66.389198100222757,0.462576030303495,1.47089802982282,0.335308326817223,1.003541570441185,0.978412323515486,-52.884414099042644,0.964890421117783,-53.204709342335171,67.044278089732884],[-8.26206267361956,-9.843305474495882,8.282043073462891,10.467333220044289,0.01998039984333,0.624027745548407,0.06045158491371,0.154888491546052,0.909159918954393,-66.778043198171616,0.995066331463153,-65.121356600745841,47.117347410874807],[-399.276439235868509,-107.246370642825312,400.0,143.417896223567197,0.723560764131491,36.171525580741886,1.626889687798461,12.919418108987784,1.086796758176095,-0.34550339951595,1.11704,4.34464356141042,63.401750945478085],[-159.703103703543434,40.299786221188327,159.999999999999972,-25.457940658282354,0.296896296456538,14.841845562905974,0.227034129400386,4.540682588007718,1.047143880833367,-40.448191934713357,1.03,-35.326398300951432,62.917543547781648],[-528.92099080864898,126.604740997664862,530.000000000000227,-72.665072601239388,1.079009191351247,53.939668396425475,0.749655890278194,14.993117805563889,1.047143880833367,-40.448191934713357,1.03,-34.793711339591681,69.250244808272669],[0.0,0.0,0.0,0.0,0.0,0.0,0.0,null,1.047143880833367,-40.448191934713357,null,null,null],[-309.410737594650641,118.773221196150047,309.999999999993122,-89.286525133688556,0.589262405342481,29.48669606246149,0.452332844103809,10.643125743619041,1.057561512697369,-24.005107953808508,1.02941,-19.07236921891781,62.677077433594384],[-430.115904349312245,102.901913835544804,430.990288012255292,-99.515440470770187,0.874383662943046,3.386473364774616,0.603594670475401,1.097444855409819,1.057561512697369,-24.005107953808508,1.057743867337219,-23.552133775996282,69.697109096079217],[-399.266177605771532,-31.685837387597068,399.999999999999545,68.369618141091479,0.733822394228014,36.68378075349441,1.638385450167901,13.01070798662745,1.045479103618506,12.293728205966183,1.05926,17.455728661225418,63.849753946629271],[-199.611460053594328,43.914936348465602,199.99999999999838,-24.491824816343939,0.388539946404052,19.423111532121663,0.8429919785022,6.694348064576292,1.036886759979868,-12.502436551219727,1.02222,-7.076534421951653,65.704722171246942],[-292.707968323611169,273.980185714007632,293.450253135366097,-271.105328999938138,0.742284811754928,2.874856714069494,0.556134280755298,1.647805276311996,1.04055701310307,-12.876192428793811,1.036886759979868,-12.502436551219727,64.216855339930106],[-3.899510860625198,-8.132454818926615,3.899999999999994,8.173216433492959,0.000489139374796,0.040761614566344,0.104258159797485,0.521290798987427,0.998894042132911,-64.952185560209656,1.00299,-64.843472929331668,30.096738312146616],[-399.231387769692958,-109.962390200224206,399.999999999999488,148.385314824485278,0.76861223030653,38.422924624261071,1.67677290410752,13.315549532618535,1.056172456553484,-4.522316341811628,1.08815,0.43125604068012,65.34575691005341],[0.0,0.0,0.0,0.0,0.0,0.0,0.0,null,1.056172456553484,-4.522316341811628,null,null,null],[-99.845150675829132,38.595034533412715,99.999999999999886,-30.85411697299714,0.154849324170755,7.740917560415575,0.146652141407042,3.450638621342167,1.053555298954449,-4.758967810648861,1.03,-0.772160665071427,50.801791991154502],[-399.210706458375455,125.899270952445974,399.999999999999659,-86.44248759610835,0.789293541624204,39.456783356337624,0.573473895665744,13.493503427429269,1.053555298954449,-4.758967810648861,1.03,0.550320446068123,66.219061607168115],[-264.550859790954348,-41.19076978819205,265.035219305307578,42.388138554044303,0.48435951435323,1.197368765852254,0.366802821066801,1.086823173531261,1.053555298954449,-4.758967810648861,1.056172456553484,-4.522316341811628,63.532112244729468],[-528.947529361258603,-43.236979754383526,530.000000000000455,95.8499859324113,1.052470638741852,52.613006178027774,0.740379491214756,14.807589824295119,1.034626686675094,-36.640734802110039,1.05,-31.062704034539344,68.393327768850781],[-528.947529361258603,-43.236979754383526,530.000000000000455,95.8499859324113,1.052470638741852,52.613006178027774,0.740379491214756,14.807589824295119,1.034626686675094,-36.640734802110039,1.05,-31.062704034539344,68.393327768850781],[954.271672143418982,345.606472911492801,-952.102180451655158,-338.707929005086385,2.169491691763824,6.898543906406417,1.503292113636168,4.454198855218277,0.974475921523923,-55.768165392257075,0.970277595174439,-56.094034939345015,69.434088518278671],[14.862390996220071,7.067902370543402,-14.839087810107838,-6.29925038851148,0.023303186112233,0.768651982031923,0.072538862651423,0.801224718741654,0.970277595174439,-56.094034939345015,1.056034266545056,-58.526338274577419,56.538448035985958],[57.256300328605164,20.736388374688772,-57.126130827099331,-20.322475740304387,0.130169501505833,0.413912634384385,0.09019752681817,0.267251931313096,0.974475921523923,-55.768165392257075,0.970277595174439,-56.094034939345015,69.434088518278386],[8.655659530428006,3.502586488129862,-8.64639832604036,-3.197107096844288,0.009261204387645,0.305479391285574,0.041156585655023,0.481051003361702,0.970277595174439,-56.094034939345015,1.005815361876512,-57.832708494000684,32.078383839252453],[0.0,0.0,0.0,0.0,0.0,0.0,0.0,null,1.058525275224456,-3.480784997373339,null,null,null],[7.306599580464697,8.80768495565923,-7.293009253059102,-8.468198685879077,0.013590327405595,0.339486269780153,0.134612170849054,0.582736678334042,0.981651222250781,-65.374227982030419,1.006590260129341,-66.43190790786899,38.859186537950578],[3.48020609555092,-0.622708697656154,-3.473103382938005,0.844540581595905,0.007102712612915,0.22183188393975,0.016118800620394,0.041299441812619,0.938039115942016,-61.385292179035012,0.999349660532672,-64.907912452672988,62.8168086710888],[-179.589364573577342,-62.29113188335036,179.999999999991246,82.818796439062865,0.410635426413904,20.527664555712505,0.866630184326455,6.882063228474789,0.938039115942016,-61.385292179035012,0.97778,-55.807186752927564,67.547137978179052]]}",
+      "orient": "split",
+      "dtype": {
+        "p_hv_mw": "float64",
+        "q_hv_mvar": "float64",
+        "p_lv_mw": "float64",
+        "q_lv_mvar": "float64",
+        "pl_mw": "float64",
+        "ql_mvar": "float64",
+        "i_hv_ka": "float64",
+        "i_lv_ka": "float64",
+        "vm_hv_pu": "float64",
+        "va_hv_degree": "float64",
+        "vm_lv_pu": "float64",
+        "va_lv_degree": "float64",
+        "loading_percent": "float64"
+      }
+    },
+    "res_trafo3w": {
+      "_module": "pandas.core.frame",
+      "_class": "DataFrame",
+      "_object": "{\"columns\":[\"p_hv_mw\",\"q_hv_mvar\",\"p_mv_mw\",\"q_mv_mvar\",\"p_lv_mw\",\"q_lv_mvar\",\"pl_mw\",\"ql_mvar\",\"i_hv_ka\",\"i_mv_ka\",\"i_lv_ka\",\"vm_hv_pu\",\"va_hv_degree\",\"vm_mv_pu\",\"va_mv_degree\",\"vm_lv_pu\",\"va_lv_degree\",\"va_internal_degree\",\"vm_internal_pu\",\"loading_percent\"],\"index\":[],\"data\":[]}",
+      "orient": "split",
+      "dtype": {
+        "p_hv_mw": "float64",
+        "q_hv_mvar": "float64",
+        "p_mv_mw": "float64",
+        "q_mv_mvar": "float64",
+        "p_lv_mw": "float64",
+        "q_lv_mvar": "float64",
+        "pl_mw": "float64",
+        "ql_mvar": "float64",
+        "i_hv_ka": "float64",
+        "i_mv_ka": "float64",
+        "i_lv_ka": "float64",
+        "vm_hv_pu": "float64",
+        "va_hv_degree": "float64",
+        "vm_mv_pu": "float64",
+        "va_mv_degree": "float64",
+        "vm_lv_pu": "float64",
+        "va_lv_degree": "float64",
+        "va_internal_degree": "float64",
+        "vm_internal_pu": "float64",
+        "loading_percent": "float64"
+      }
+    },
+    "res_impedance": {
+      "_module": "pandas.core.frame",
+      "_class": "DataFrame",
+      "_object": "{\"columns\":[\"p_from_mw\",\"q_from_mvar\",\"p_to_mw\",\"q_to_mvar\",\"pl_mw\",\"ql_mvar\",\"i_from_ka\",\"i_to_ka\"],\"index\":[],\"data\":[]}",
+      "orient": "split",
+      "dtype": {
+        "p_from_mw": "float64",
+        "q_from_mvar": "float64",
+        "p_to_mw": "float64",
+        "q_to_mvar": "float64",
+        "pl_mw": "float64",
+        "ql_mvar": "float64",
+        "i_from_ka": "float64",
+        "i_to_ka": "float64"
+      }
+    },
+    "res_ext_grid": {
+      "_module": "pandas.core.frame",
+      "_class": "DataFrame",
+      "_object": "{\"columns\":[\"p_mw\",\"q_mvar\"],\"index\":[0],\"data\":[[838.283338425206466,107.835643939241123]]}",
+      "orient": "split",
+      "dtype": {
+        "p_mw": "float64",
+        "q_mvar": "float64"
+      }
+    },
+    "res_load": {
+      "_module": "pandas.core.frame",
+      "_class": "DataFrame",
+      "_object": "{\"columns\":[\"p_mw\",\"q_mvar\"],\"index\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72],\"data\":[[150.0,60.0],[50.0,20.0],[6.0,0.5],[125.0,12.5],[100.0,10.0],[175.0,17.5],[100.0,10.0],[200.0,75.5],[200.0,70.0],[400.0,156.5],[150.0,50.0],[255.0,70.0],[135.0,40.0],[25.0,12.5],[75.0,37.5],[2.5,0.5],[1.0,1.0],[2.5,0.5],[4.5,0.8],[1000.0,250.0],[1000.0,250.0],[150.0,40.0],[150.0,40.0],[300.0,100.0],[2.5,0.5],[4.5,0.8],[200.0,72.5],[100.0,40.0],[100.0,37.5],[1.5,0.38],[8.0,1.5],[8.0,1.5],[150.0,50.0],[150.0,50.0],[225.0,87.5],[175.0,62.700000000000003],[1.5,0.38],[150.0,37.5],[50.0,12.5],[200.0,75.0],[400.0,150.0],[200.0,75.0],[375.0,50.0],[225.0,30.0],[75.0,25.0],[150.0,38.75],[75.0,21.25],[2.5,0.5],[1.5,0.38],[1.5,0.38],[8.0,1.5],[25.0,7.5],[75.0,22.5],[70.0,23.75],[210.0,71.25],[1.0,1.0],[75.0,25.0],[225.0,75.0],[142.5,75.0],[150.0,75.0],[147.5,75.0],[150.0,75.0],[325.0,112.0],[375.0,137.0],[1.5,0.38],[275.0,51.0],[200.0,60.0],[200.0,60.0],[225.0,132.0],[75.0,30.0],[25.0,10.0],[225.0,4.0],[1.5,0.38]]}",
+      "orient": "split",
+      "dtype": {
+        "p_mw": "float64",
+        "q_mvar": "float64"
+      }
+    },
+    "res_motor": {
+      "_module": "pandas.core.frame",
+      "_class": "DataFrame",
+      "_object": "{\"columns\":[\"p_mw\",\"q_mvar\"],\"index\":[],\"data\":[]}",
+      "orient": "split",
+      "dtype": {
+        "p_mw": "float64",
+        "q_mvar": "float64"
+      }
+    },
+    "res_sgen": {
+      "_module": "pandas.core.frame",
+      "_class": "DataFrame",
+      "_object": "{\"columns\":[\"p_mw\",\"q_mvar\"],\"index\":[],\"data\":[]}",
+      "orient": "split",
+      "dtype": {
+        "p_mw": "float64",
+        "q_mvar": "float64"
+      }
+    },
+    "res_storage": {
+      "_module": "pandas.core.frame",
+      "_class": "DataFrame",
+      "_object": "{\"columns\":[\"p_mw\",\"q_mvar\"],\"index\":[],\"data\":[]}",
+      "orient": "split",
+      "dtype": {
+        "p_mw": "float64",
+        "q_mvar": "float64"
+      }
+    },
+    "res_shunt": {
+      "_module": "pandas.core.frame",
+      "_class": "DataFrame",
+      "_object": "{\"columns\":[\"p_mw\",\"q_mvar\",\"vm_pu\"],\"index\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26],\"data\":[[0.0,0.0,1.050703175078259],[0.0,0.0,1.001021226435296],[0.0,0.0,1.012780238508068],[0.0,0.0,1.021135378808343],[0.0,6.034357049630004,0.998706357428747],[0.0,0.0,1.04965283171325],[0.0,0.0,1.01715867781621],[0.0,0.0,0.979542194156343],[0.0,0.0,1.070123616423633],[0.0,0.0,0.978412323515486],[0.0,0.0,0.964890421117783],[0.0,0.0,0.995066331463153],[0.0,0.0,0.909159918954393],[0.0,-274.127576791690956,1.047143880833367],[0.0,-223.687270627749456,1.057561512697369],[0.0,0.0,1.036886759979868],[0.0,0.0,1.04055701310307],[0.0,0.0,1.053555298954449],[0.0,0.0,0.970277595174439],[0.0,0.0,1.005815361876512],[0.0,0.0,0.974475921523923],[0.0,-112.96281877323247,1.062839681105445],[0.0,0.0,0.981180258799284],[0.0,0.0,0.999349660532672],[0.0,0.0,0.938039115942016],[0.0,0.0,1.012780238508068],[0.0,0.0,1.047143880833367]]}",
+      "orient": "split",
+      "dtype": {
+        "p_mw": "float64",
+        "q_mvar": "float64",
+        "vm_pu": "float64"
+      }
+    },
+    "res_gen": {
+      "_module": "pandas.core.frame",
+      "_class": "DataFrame",
+      "_object": "{\"columns\":[\"p_mw\",\"q_mvar\",\"va_degree\",\"vm_pu\"],\"index\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37],\"data\":[[200.0,-38.513219011501157,-0.713708930788021,1.02941],[364.100000000000023,-79.499050929775535,-1.19026891696041,1.02941],[0.0,0.0,0.0,0.0],[600.0,251.086515373900284,-50.249292231110367,1.025],[400.0,123.245586583822785,-48.811469750995712,1.025],[0.0,0.442054213734139,-45.567893541803414,1.02],[539.0,252.254914812674599,-45.244643083892242,1.045],[539.0,252.254914812674599,-45.244643083892242,1.045],[4.9,16.773379065718029,-65.063554817614417,1.001],[800.0,105.622673497402928,-0.208899066412982,1.03],[200.0,23.746124310085037,0.882967080161469,1.03],[200.0,23.746124310085037,0.882967080161469,1.03],[359.0,95.571074401494798,-46.880295198225895,0.97778],[0.0,0.0,0.0,0.0],[300.0,-64.329070716768143,-0.197735318378721,1.02897],[629.0,350.862385717741859,-42.886796517596039,1.05],[170.0,72.239298445656488,-41.695223602627301,1.05],[0.0,0.0,0.0,0.0],[250.0,-48.954892511746898,-16.54904413670624,1.0472],[450.0,93.052016229300875,-4.874991916730721,1.1],[300.0,56.065103518914782,-4.100748179198781,1.1],[400.0,143.417896223567567,4.34464356141042,1.11704],[530.0,-72.665072601239288,-34.793711339591681,1.03],[160.0,-25.457940658282286,-35.326398300951432,1.03],[0.0,0.0,0.0,0.0],[310.0,-89.286525133688514,-19.07236921891781,1.02941],[400.0,68.36961814109145,17.455728661225418,1.05926],[200.0,-24.491824816343939,-7.076534421951653,1.02222],[4.9,9.173216433492927,-64.843472929331668,1.00299],[400.0,-86.442487596107938,0.550320446068123,1.03],[100.0,-30.854116972997147,-0.772160665071427,1.03],[0.0,0.0,0.0,0.0],[530.0,95.849985932411428,-31.062704034539344,1.05],[530.0,95.849985932411428,-31.062704034539344,1.05],[4.9,-5.701338803371397,-66.130351102521018,0.96239],[0.0,0.0,0.0,0.0],[180.0,82.818796439062837,-55.807186752927564,0.97778],[400.0,148.385314824485192,0.43125604068012,1.08815]]}",
+      "orient": "split",
+      "dtype": {
+        "p_mw": "float64",
+        "q_mvar": "float64",
+        "va_degree": "float64",
+        "vm_pu": "float64"
+      }
+    },
+    "res_ward": {
+      "_module": "pandas.core.frame",
+      "_class": "DataFrame",
+      "_object": "{\"columns\":[\"p_mw\",\"q_mvar\",\"vm_pu\"],\"index\":[],\"data\":[]}",
+      "orient": "split",
+      "dtype": {
+        "p_mw": "float64",
+        "q_mvar": "float64",
+        "vm_pu": "float64"
+      }
+    },
+    "res_xward": {
+      "_module": "pandas.core.frame",
+      "_class": "DataFrame",
+      "_object": "{\"columns\":[\"p_mw\",\"q_mvar\",\"vm_pu\",\"va_internal_degree\",\"vm_internal_pu\"],\"index\":[],\"data\":[]}",
+      "orient": "split",
+      "dtype": {
+        "p_mw": "float64",
+        "q_mvar": "float64",
+        "vm_pu": "float64",
+        "va_internal_degree": "float64",
+        "vm_internal_pu": "float64"
+      }
+    },
+    "res_dcline": {
+      "_module": "pandas.core.frame",
+      "_class": "DataFrame",
+      "_object": "{\"columns\":[\"p_from_mw\",\"q_from_mvar\",\"p_to_mw\",\"q_to_mvar\",\"pl_mw\",\"vm_from_pu\",\"va_from_degree\",\"vm_to_pu\",\"va_to_degree\"],\"index\":[],\"data\":[]}",
+      "orient": "split",
+      "dtype": {
+        "p_from_mw": "float64",
+        "q_from_mvar": "float64",
+        "p_to_mw": "float64",
+        "q_to_mvar": "float64",
+        "pl_mw": "float64",
+        "vm_from_pu": "float64",
+        "va_from_degree": "float64",
+        "vm_to_pu": "float64",
+        "va_to_degree": "float64"
+      }
+    },
+    "res_asymmetric_load": {
+      "_module": "pandas.core.frame",
+      "_class": "DataFrame",
+      "_object": "{\"columns\":[\"p_mw\",\"q_mvar\"],\"index\":[],\"data\":[]}",
+      "orient": "split",
+      "dtype": {
+        "p_mw": "float64",
+        "q_mvar": "float64"
+      }
+    },
+    "res_asymmetric_sgen": {
+      "_module": "pandas.core.frame",
+      "_class": "DataFrame",
+      "_object": "{\"columns\":[\"p_mw\",\"q_mvar\"],\"index\":[],\"data\":[]}",
+      "orient": "split",
+      "dtype": {
+        "p_mw": "float64",
+        "q_mvar": "float64"
+      }
+    },
+    "res_bus_est": {
+      "_module": "pandas.core.frame",
+      "_class": "DataFrame",
+      "_object": "{\"columns\":[\"vm_pu\",\"va_degree\",\"p_mw\",\"q_mvar\"],\"index\":[],\"data\":[]}",
+      "orient": "split",
+      "dtype": {
+        "vm_pu": "float64",
+        "va_degree": "float64",
+        "p_mw": "float64",
+        "q_mvar": "float64"
+      }
+    },
+    "res_line_est": {
+      "_module": "pandas.core.frame",
+      "_class": "DataFrame",
+      "_object": "{\"columns\":[\"p_from_mw\",\"q_from_mvar\",\"p_to_mw\",\"q_to_mvar\",\"pl_mw\",\"ql_mvar\",\"i_from_ka\",\"i_to_ka\",\"i_ka\",\"vm_from_pu\",\"va_from_degree\",\"vm_to_pu\",\"va_to_degree\",\"loading_percent\"],\"index\":[],\"data\":[]}",
+      "orient": "split",
+      "dtype": {
+        "p_from_mw": "float64",
+        "q_from_mvar": "float64",
+        "p_to_mw": "float64",
+        "q_to_mvar": "float64",
+        "pl_mw": "float64",
+        "ql_mvar": "float64",
+        "i_from_ka": "float64",
+        "i_to_ka": "float64",
+        "i_ka": "float64",
+        "vm_from_pu": "float64",
+        "va_from_degree": "float64",
+        "vm_to_pu": "float64",
+        "va_to_degree": "float64",
+        "loading_percent": "float64"
+      }
+    },
+    "res_trafo_est": {
+      "_module": "pandas.core.frame",
+      "_class": "DataFrame",
+      "_object": "{\"columns\":[\"p_hv_mw\",\"q_hv_mvar\",\"p_lv_mw\",\"q_lv_mvar\",\"pl_mw\",\"ql_mvar\",\"i_hv_ka\",\"i_lv_ka\",\"vm_hv_pu\",\"va_hv_degree\",\"vm_lv_pu\",\"va_lv_degree\",\"loading_percent\"],\"index\":[],\"data\":[]}",
+      "orient": "split",
+      "dtype": {
+        "p_hv_mw": "float64",
+        "q_hv_mvar": "float64",
+        "p_lv_mw": "float64",
+        "q_lv_mvar": "float64",
+        "pl_mw": "float64",
+        "ql_mvar": "float64",
+        "i_hv_ka": "float64",
+        "i_lv_ka": "float64",
+        "vm_hv_pu": "float64",
+        "va_hv_degree": "float64",
+        "vm_lv_pu": "float64",
+        "va_lv_degree": "float64",
+        "loading_percent": "float64"
+      }
+    },
+    "res_trafo3w_est": {
+      "_module": "pandas.core.frame",
+      "_class": "DataFrame",
+      "_object": "{\"columns\":[\"p_hv_mw\",\"q_hv_mvar\",\"p_mv_mw\",\"q_mv_mvar\",\"p_lv_mw\",\"q_lv_mvar\",\"pl_mw\",\"ql_mvar\",\"i_hv_ka\",\"i_mv_ka\",\"i_lv_ka\",\"vm_hv_pu\",\"va_hv_degree\",\"vm_mv_pu\",\"va_mv_degree\",\"vm_lv_pu\",\"va_lv_degree\",\"va_internal_degree\",\"vm_internal_pu\",\"loading_percent\"],\"index\":[],\"data\":[]}",
+      "orient": "split",
+      "dtype": {
+        "p_hv_mw": "float64",
+        "q_hv_mvar": "float64",
+        "p_mv_mw": "float64",
+        "q_mv_mvar": "float64",
+        "p_lv_mw": "float64",
+        "q_lv_mvar": "float64",
+        "pl_mw": "float64",
+        "ql_mvar": "float64",
+        "i_hv_ka": "float64",
+        "i_mv_ka": "float64",
+        "i_lv_ka": "float64",
+        "vm_hv_pu": "float64",
+        "va_hv_degree": "float64",
+        "vm_mv_pu": "float64",
+        "va_mv_degree": "float64",
+        "vm_lv_pu": "float64",
+        "va_lv_degree": "float64",
+        "va_internal_degree": "float64",
+        "vm_internal_pu": "float64",
+        "loading_percent": "float64"
+      }
+    },
+    "res_impedance_est": {
+      "_module": "pandas.core.frame",
+      "_class": "DataFrame",
+      "_object": "{\"columns\":[\"p_from_mw\",\"q_from_mvar\",\"p_to_mw\",\"q_to_mvar\",\"pl_mw\",\"ql_mvar\",\"i_from_ka\",\"i_to_ka\"],\"index\":[],\"data\":[]}",
+      "orient": "split",
+      "dtype": {
+        "p_from_mw": "float64",
+        "q_from_mvar": "float64",
+        "p_to_mw": "float64",
+        "q_to_mvar": "float64",
+        "pl_mw": "float64",
+        "ql_mvar": "float64",
+        "i_from_ka": "float64",
+        "i_to_ka": "float64"
+      }
+    },
+    "res_bus_sc": {
+      "_module": "pandas.core.frame",
+      "_class": "DataFrame",
+      "_object": "{\"columns\":[],\"index\":[],\"data\":[]}",
+      "orient": "split"
+    },
+    "res_line_sc": {
+      "_module": "pandas.core.frame",
+      "_class": "DataFrame",
+      "_object": "{\"columns\":[],\"index\":[],\"data\":[]}",
+      "orient": "split"
+    },
+    "res_trafo_sc": {
+      "_module": "pandas.core.frame",
+      "_class": "DataFrame",
+      "_object": "{\"columns\":[],\"index\":[],\"data\":[]}",
+      "orient": "split"
+    },
+    "res_trafo3w_sc": {
+      "_module": "pandas.core.frame",
+      "_class": "DataFrame",
+      "_object": "{\"columns\":[],\"index\":[],\"data\":[]}",
+      "orient": "split"
+    },
+    "res_ext_grid_sc": {
+      "_module": "pandas.core.frame",
+      "_class": "DataFrame",
+      "_object": "{\"columns\":[],\"index\":[],\"data\":[]}",
+      "orient": "split"
+    },
+    "res_gen_sc": {
+      "_module": "pandas.core.frame",
+      "_class": "DataFrame",
+      "_object": "{\"columns\":[],\"index\":[],\"data\":[]}",
+      "orient": "split"
+    },
+    "res_sgen_sc": {
+      "_module": "pandas.core.frame",
+      "_class": "DataFrame",
+      "_object": "{\"columns\":[],\"index\":[],\"data\":[]}",
+      "orient": "split"
+    },
+    "res_bus_3ph": {
+      "_module": "pandas.core.frame",
+      "_class": "DataFrame",
+      "_object": "{\"columns\":[\"vm_a_pu\",\"va_a_degree\",\"vm_b_pu\",\"va_b_degree\",\"vm_c_pu\",\"va_c_degree\",\"p_a_mw\",\"q_a_mvar\",\"p_b_mw\",\"q_b_mvar\",\"p_c_mw\",\"q_c_mvar\"],\"index\":[],\"data\":[]}",
+      "orient": "split",
+      "dtype": {
+        "vm_a_pu": "float64",
+        "va_a_degree": "float64",
+        "vm_b_pu": "float64",
+        "va_b_degree": "float64",
+        "vm_c_pu": "float64",
+        "va_c_degree": "float64",
+        "p_a_mw": "float64",
+        "q_a_mvar": "float64",
+        "p_b_mw": "float64",
+        "q_b_mvar": "float64",
+        "p_c_mw": "float64",
+        "q_c_mvar": "float64"
+      }
+    },
+    "res_line_3ph": {
+      "_module": "pandas.core.frame",
+      "_class": "DataFrame",
+      "_object": "{\"columns\":[\"p_a_from_mw\",\"q_a_from_mvar\",\"p_b_from_mw\",\"q_b_from_mvar\",\"q_c_from_mvar\",\"p_a_to_mw\",\"q_a_to_mvar\",\"p_b_to_mw\",\"q_b_to_mvar\",\"p_c_to_mw\",\"q_c_to_mvar\",\"p_a_l_mw\",\"q_a_l_mvar\",\"p_b_l_mw\",\"q_b_l_mvar\",\"p_c_l_mw\",\"q_c_l_mvar\",\"i_a_from_ka\",\"i_a_to_ka\",\"i_b_from_ka\",\"i_b_to_ka\",\"i_c_from_ka\",\"i_c_to_ka\",\"i_a_ka\",\"i_b_ka\",\"i_c_ka\",\"i_n_from_ka\",\"i_n_to_ka\",\"i_n_ka\",\"loading_a_percent\",\"loading_b_percent\",\"loading_c_percent\"],\"index\":[],\"data\":[]}",
+      "orient": "split",
+      "dtype": {
+        "p_a_from_mw": "float64",
+        "q_a_from_mvar": "float64",
+        "p_b_from_mw": "float64",
+        "q_b_from_mvar": "float64",
+        "q_c_from_mvar": "float64",
+        "p_a_to_mw": "float64",
+        "q_a_to_mvar": "float64",
+        "p_b_to_mw": "float64",
+        "q_b_to_mvar": "float64",
+        "p_c_to_mw": "float64",
+        "q_c_to_mvar": "float64",
+        "p_a_l_mw": "float64",
+        "q_a_l_mvar": "float64",
+        "p_b_l_mw": "float64",
+        "q_b_l_mvar": "float64",
+        "p_c_l_mw": "float64",
+        "q_c_l_mvar": "float64",
+        "i_a_from_ka": "float64",
+        "i_a_to_ka": "float64",
+        "i_b_from_ka": "float64",
+        "i_b_to_ka": "float64",
+        "i_c_from_ka": "float64",
+        "i_c_to_ka": "float64",
+        "i_a_ka": "float64",
+        "i_b_ka": "float64",
+        "i_c_ka": "float64",
+        "i_n_from_ka": "float64",
+        "i_n_to_ka": "float64",
+        "i_n_ka": "float64",
+        "loading_a_percent": "float64",
+        "loading_b_percent": "float64",
+        "loading_c_percent": "float64"
+      }
+    },
+    "res_trafo_3ph": {
+      "_module": "pandas.core.frame",
+      "_class": "DataFrame",
+      "_object": "{\"columns\":[\"p_a_hv_mw\",\"q_a_hv_mvar\",\"p_b_hv_mw\",\"q_b_hv_mvar\",\"p_c_hv_mw\",\"q_c_hv_mvar\",\"p_a_lv_mw\",\"q_a_lv_mvar\",\"p_b_lv_mw\",\"q_b_lv_mvar\",\"p_c_lv_mw\",\"q_c_lv_mvar\",\"p_a_l_mw\",\"q_a_l_mvar\",\"p_b_l_mw\",\"q_b_l_mvar\",\"p_c_l_mw\",\"q_c_l_mvar\",\"i_a_hv_ka\",\"i_a_lv_ka\",\"i_b_hv_ka\",\"i_b_lv_ka\",\"i_c_hv_ka\",\"i_c_lv_ka\",\"loading_a_percent\",\"loading_b_percent\",\"loading_c_percent\",\"loading_percent\"],\"index\":[],\"data\":[]}",
+      "orient": "split",
+      "dtype": {
+        "p_a_hv_mw": "float64",
+        "q_a_hv_mvar": "float64",
+        "p_b_hv_mw": "float64",
+        "q_b_hv_mvar": "float64",
+        "p_c_hv_mw": "float64",
+        "q_c_hv_mvar": "float64",
+        "p_a_lv_mw": "float64",
+        "q_a_lv_mvar": "float64",
+        "p_b_lv_mw": "float64",
+        "q_b_lv_mvar": "float64",
+        "p_c_lv_mw": "float64",
+        "q_c_lv_mvar": "float64",
+        "p_a_l_mw": "float64",
+        "q_a_l_mvar": "float64",
+        "p_b_l_mw": "float64",
+        "q_b_l_mvar": "float64",
+        "p_c_l_mw": "float64",
+        "q_c_l_mvar": "float64",
+        "i_a_hv_ka": "float64",
+        "i_a_lv_ka": "float64",
+        "i_b_hv_ka": "float64",
+        "i_b_lv_ka": "float64",
+        "i_c_hv_ka": "float64",
+        "i_c_lv_ka": "float64",
+        "loading_a_percent": "float64",
+        "loading_b_percent": "float64",
+        "loading_c_percent": "float64",
+        "loading_percent": "float64"
+      }
+    },
+    "res_ext_grid_3ph": {
+      "_module": "pandas.core.frame",
+      "_class": "DataFrame",
+      "_object": "{\"columns\":[\"p_a_mw\",\"q_a_mvar\",\"p_b_mw\",\"q_b_mvar\",\"p_c_mw\",\"q_c_mvar\"],\"index\":[],\"data\":[]}",
+      "orient": "split",
+      "dtype": {
+        "p_a_mw": "float64",
+        "q_a_mvar": "float64",
+        "p_b_mw": "float64",
+        "q_b_mvar": "float64",
+        "p_c_mw": "float64",
+        "q_c_mvar": "float64"
+      }
+    },
+    "res_shunt_3ph": {
+      "_module": "pandas.core.frame",
+      "_class": "DataFrame",
+      "_object": "{\"columns\":[],\"index\":[],\"data\":[]}",
+      "orient": "split"
+    },
+    "res_load_3ph": {
+      "_module": "pandas.core.frame",
+      "_class": "DataFrame",
+      "_object": "{\"columns\":[\"p_mw\",\"q_mvar\"],\"index\":[],\"data\":[]}",
+      "orient": "split",
+      "dtype": {
+        "p_mw": "float64",
+        "q_mvar": "float64"
+      }
+    },
+    "res_sgen_3ph": {
+      "_module": "pandas.core.frame",
+      "_class": "DataFrame",
+      "_object": "{\"columns\":[\"p_mw\",\"q_mvar\"],\"index\":[],\"data\":[]}",
+      "orient": "split",
+      "dtype": {
+        "p_mw": "float64",
+        "q_mvar": "float64"
+      }
+    },
+    "res_storage_3ph": {
+      "_module": "pandas.core.frame",
+      "_class": "DataFrame",
+      "_object": "{\"columns\":[\"p_mw\",\"q_mvar\"],\"index\":[],\"data\":[]}",
+      "orient": "split",
+      "dtype": {
+        "p_mw": "float64",
+        "q_mvar": "float64"
+      }
+    },
+    "res_asymmetric_load_3ph": {
+      "_module": "pandas.core.frame",
+      "_class": "DataFrame",
+      "_object": "{\"columns\":[\"p_a_mw\",\"q_a_mvar\",\"p_b_mw\",\"q_b_mvar\",\"p_c_mw\",\"q_c_mvar\"],\"index\":[],\"data\":[]}",
+      "orient": "split",
+      "dtype": {
+        "p_a_mw": "float64",
+        "q_a_mvar": "float64",
+        "p_b_mw": "float64",
+        "q_b_mvar": "float64",
+        "p_c_mw": "float64",
+        "q_c_mvar": "float64"
+      }
+    },
+    "res_asymmetric_sgen_3ph": {
+      "_module": "pandas.core.frame",
+      "_class": "DataFrame",
+      "_object": "{\"columns\":[\"p_a_mw\",\"q_a_mvar\",\"p_b_mw\",\"q_b_mvar\",\"p_c_mw\",\"q_c_mvar\"],\"index\":[],\"data\":[]}",
+      "orient": "split",
+      "dtype": {
+        "p_a_mw": "float64",
+        "q_a_mvar": "float64",
+        "p_b_mw": "float64",
+        "q_b_mvar": "float64",
+        "p_c_mw": "float64",
+        "q_c_mvar": "float64"
+      }
+    },
+    "user_pf_options": {},
+    "OPF_converged": false
+  }
+}
