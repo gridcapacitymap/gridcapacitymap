@@ -12,4 +12,4 @@ Some code in the project is heavily built on code from Pandapower. pandapower is
 
 In addition, the project also contains the following data from Svenska Kraftnät which can be found in the tutorials/data folder. 
 
-- Svedala, license CC BY-SA 4.0
+- The Svedala Power System Model © 2010 by Svenska kraftnät, licensed under CC BY-SA 4.0
